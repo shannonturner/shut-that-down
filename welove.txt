@@ -1,0 +1,4 @@
+The <a href="http://sunlightfoundation.com/" target="_blank">Sunlight Foundation</a>, for providing information on legislators and donors through their Congress API and Influence Explorer API.
+The <a href="http://www.opensecrets.org" target="_blank">Center for Responsive Politics</a>, for providing information on legislators and donors through their OpenSecrets API.
+The open source community, for making this project possible.
+

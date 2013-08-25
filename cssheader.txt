@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>!!!DYNAMIC_TITLE!!! - Shut That Down</title>
+
+
+  <link rel="stylesheet" href="css/foundation.css" />
+
+
+  <script src="js/vendor/custom.modernizr.js"></script>
+
+</head>
+
+<body>
+
+<nav class="top-bar">
+  <ul class="title-area">
+
+    <li class="name">
+      <h1><a href="index">Shut That Down</a></h1>
+    </li>
+
+  </ul>
+
+  <section class="top-bar-section" >
+
+    <ul class="left">
+
+      <li class="divider"></li>
+      <li class="has-dropdown"><a href="browse_quotes">Quotes</a>
+      	<ul class="dropdown">
+      	  <li><a href="browse_quotes">All</a></li>
+	  <li><a href="browse_quotes?quote_type=1">Misogynist</a></li>
+	  <li><a href="browse_quotes?quote_type=2">Racist</a></li>
+	  <li><a href="browse_quotes?quote_type=3">Xenophobic</a></li>
+	  <li><a href="browse_quotes?quote_type=4">Anti-LGBTQ</a></li>
+	</ul>
+      </li>
+
+      <li class="divider"></li>
+      <li class="has-dropdown"><a href="browse_persons">People</a>
+
+        <ul class="dropdown">
+          <li><a href="browse_persons">All</a></li>
+          <li><a href="browse_persons?person_type=1">Politicians</a></li>
+          <li><a href="browse_persons?person_type=2">Media Figures</a></li>
+	  <li><a href="browse_persons?person_type=3">Others</a></li>
+        </ul>
+      </li>
+
+      <li class="divider"></li>
+      <li><a href="enablers">Enablers</a></li>
+<!--
+      <li class="divider"></li>
+      <li><a href="followthemoney">Follow the Money (Similar to enablers but expanded: <Corp> gave <$5000> to <Pol> <Quote>)</a></li>
+-->      
+      <li class="divider"></li>
+      <li><a href="inmystate">In My State</a></li>
+
+      <li class="divider"></li>
+      <li><a href="stats">Stats</a></li>
+<!--
+      <li class="divider"></li>
+      <li><a href="#">Quiz</a></li>
+-->
+      <li class="has-dropdown"><a href="about">About Us</a>
+
+	          <ul class="dropdown">
+	            <li><a href="about">About Shut That Down</a></li>
+	            <li><a href="welove">Who We Love</a></li>
+	            <li><a href="special_thanks">Special Thanks</a></li>
+	          </ul>
+      </li>
+<!--
+      <li class="divider"></li>
+      <li><a href="#">Blog</a></li>
+-->    
+      <li class="has-form">
+	          <a class="button" href="random_quote">Random Quote</a>
+      </li>
+    </ul>
+
+    <!-- Right Nav Section -->
+    <ul class="right">
+      <li class="divider hide-for-small"></li>
+
+      <li class="has-form hide-for-small">
+        <form action=search method=post>
+          <div class="row collapse">
+            <div class="small-8 columns">
+              <input type="text" name="query">
+            </div>
+            <div class="small-4 columns">
+              <a href="#" class="alert button">Search</a>
+            </div>
+          </div>
+        </form>
+      </li>
+
+    </ul>
+  </section>
+</nav>
