@@ -99,7 +99,7 @@ class Root(object):
 
                 donors_source.append('</td><td>{0}</td><td>${1:,}</td><td>${2:,}</td><td>${3:,}</td></tr>'.format(contribution['name'], int(float(contribution['total_amount'])), int(float(contribution['direct_amount'])), int(float(contribution['employee_amount']))))
                 
-            donors_source.append('<tr><td colspan=5>Donation information provided by the <a href="http://sunlightfoundation.com/">Sunlight Foundation</a></td></tr></table>\n</div> </div>')
+            donors_source.append('<tr><td colspan=5>Donation information provided by the <a href="http://sunlightfoundation.com/" target="_blank">Sunlight Foundation</a>, <a href="http://opensecrets.org/" target="_blank">OpenSecrets.org</a>, and <a href="http://followthemoney.org" target="_blank">FollowTheMoney.org</a></td></tr></table>\n</div> </div>')
                
             page_source.extend(donors_source)
 
@@ -842,7 +842,7 @@ class Root(object):
 
                     donors_source.append('</td><td>{0}</td><td>${1:,}</td><td>${2:,}</td><td>${3:,}</td></tr>'.format(contribution['name'], int(float(contribution['total_amount'])), int(float(contribution['direct_amount'])), int(float(contribution['employee_amount']))))
 
-                donors_source.append('<tr><td colspan=5>Donation information provided by the <a href="http://sunlightfoundation.com/" target="_blank">Sunlight Foundation</a></td></tr>')
+                donors_source.append('<tr><td colspan=5>Donation information provided by the <a href="http://sunlightfoundation.com/" target="_blank">Sunlight Foundation</a>, <a href="http://opensecrets.org/" target="_blank">OpenSecrets.org</a>, and <a href="http://followthemoney.org" target="_blank">FollowTheMoney.org</a></td></tr>')
                 
             elif len(crp_contributions_list) > 0:
 
@@ -872,7 +872,7 @@ class Root(object):
 
                     donors_source.append('</td><td>{0}</td><td>${1:,}</td></tr>'.format(contribution['@attributes']['org_name'], int(float(contribution['@attributes']['total']))))
 
-                donors_source.append('<tr><td colspan=5>Donation information provided by the <a href="http://opensecrets.org" target="_blank">Center for Responsive Politics - OpenSecrets.org</a></td></tr>')
+                donors_source.append('<tr><td colspan=5>Donation information provided by the <a href="http://sunlightfoundation.com/" target="_blank">Sunlight Foundation</a>, <a href="http://opensecrets.org/" target="_blank">OpenSecrets.org</a>, and <a href="http://followthemoney.org" target="_blank">FollowTheMoney.org</a></td></tr>')
                 
             donors_source.append('</table>\n<br>&nbsp;<br>\n\n')
 
@@ -1533,6 +1533,21 @@ class Root(object):
         page_source.append('If you love Shut That Down, consider a donation to those good folks doing great work on tiny budgets.</td></tr></table> </div></div>')
 
         return wrap_in_css(page_source, "Shut That Down Loves ...")
+
+    def submit_quote(self, **kwargs):
+
+        """ Cherrypy.Root.submit_quote(): shutthatdown.com/submit_quote (Hooks into Google Form)
+        """
+
+        del kwargs
+
+        page_source = []
+
+        page_source.append('<div class="row"> <div class="small-8 small-centered columns">')
+        page_source.append('<iframe src="https://docs.google.com/forms/d/1xzyx_9maLkASiShXwvzPe8VIQpXstSSRIJVRgHg2hps/viewform?embedded=true" width="760" height="660" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>')
+        page_source.append('</div> </div>')
+
+        return wrap_in_css(page_source, "Submit new quote")
              
     index.exposed = True
 
@@ -1547,6 +1562,7 @@ class Root(object):
     special_thanks.exposed = True
     stats.exposed = True
     welove.exposed = True
+    submit_quote.exposed = True
 
 def wrap_in_css(source, title):
 
