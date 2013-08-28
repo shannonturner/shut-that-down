@@ -1432,7 +1432,8 @@ class Root(object):
         
         for (org_name, sunlight_id) in database_cursor.fetchall():
             if sunlight_id is None:
-                org_table.append('<tr><td><b>{0}</b></td></tr>'.format(org_name))
+                if org_name != 'BLANK' and org_name.count(",") != 1 and org_name.isupper() == False:
+                    org_table.append('<tr><td><b>{0}</b></td></tr>'.format(org_name))
             else:  
                 org_table.append('<tr><td><b><a href="http://influenceexplorer.com/organization/{0}/{1}" target="_blank">{2}</a></b></td></tr>'.format(org_name.lower().replace(" ","-"), sunlight_id, org_name))                
 
