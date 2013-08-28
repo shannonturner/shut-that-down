@@ -1025,7 +1025,9 @@ class Root(object):
 
         database_connection.close()
 
-        return self.quote(kwargs = {'quote_id': random.choice(available_quotes)})
+        kwargs = {'quote_id': random.choice(available_quotes)}
+
+        return self.quote(**kwargs)
 
     def search(self, **kwargs):
 
