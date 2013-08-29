@@ -9,6 +9,7 @@
 
 
   <link rel="stylesheet" href="css/foundation.css" />
+  <link rel="icon" type="image/png" href="favicon.png">
 
 
   <script src="js/vendor/custom.modernizr.js"></script>

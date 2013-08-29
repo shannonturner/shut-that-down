@@ -1262,7 +1262,7 @@ class Root(object):
         database_cursor = database_connection.cursor()
 
         browse_query = "WITH PAGINATION AS ( SELECT DISTINCT ON (quotes.id) ROW_NUMBER() OVER (ORDER BY  quotes.id ) RETURN_ITEMS, persons.id, persons.display_name, persons.type, quotes.id, quotes.quote_text from persons inner join quotes on quotes.who_said = persons.id inner join quote_issues on quotes.id = quote_issues.quote_id where quote_text != ''-- AND ANY ADDITIONAL CONDITIONS ) SELECT * FROM PAGINATION WHERE RETURN_ITEMS Between --START and --END"
-        total_quotes_query = "select count(*) from quotes inner join persons on quotes.who_said = persons.id inner join quote_issues on quotes.id = quote_issues.quote_id where quote_text != '' -- AND ANY ADDITIONAL CONDITIONS"
+        total_quotes_query = "select count(distinct quotes.id) from quotes inner join persons on quotes.who_said = persons.id inner join quote_issues on quotes.id = quote_issues.quote_id where quote_text != '' -- AND ANY ADDITIONAL CONDITIONS"
 
         try:
             if int(quote_type) in (1,2,3,4):            
