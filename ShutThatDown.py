@@ -602,8 +602,13 @@ class Root(object):
                     voter_turnout_query = None
 
                 if voter_turnout_query is not None:
+                    if "state_abbrev = ''" in voter_turnout_query and person_state is not None:
+                        voter_turnout_query = voter_turnout_query.replace("state_abbrev = ''", "state_abbrev = '{0}'".format(person_state))
                     database_cursor.execute(voter_turnout_query)
-                    (voter_turnout_state, vep_turnout_rate) = database_cursor.fetchone()      
+                    try:
+                        (voter_turnout_state, vep_turnout_rate) = database_cursor.fetchone()
+                    except TypeError:
+                        voter_turnout_query = None      
 
         # Connections
 
