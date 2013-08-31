@@ -1105,7 +1105,7 @@ class Root(object):
         database_connection = psycopg2.connect(self.database_connection_details)
         database_cursor = database_connection.cursor()
 
-        thanks_query = "select persons.display_name, quotes.id from persons inner join quotes on quotes.who_said = persons.id where quote_text != ''"
+        thanks_query = "select distinct on (persons.display_name) persons.display_name, quotes.id from persons inner join quotes on quotes.who_said = persons.id where quote_text != ''"
         database_cursor.execute(thanks_query)
 
         thanks_list = []
