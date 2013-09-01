@@ -668,7 +668,7 @@ class Root(object):
                 else:
                     other_person_names[first_person_id] = {'name': None, 'connection': connection, 'side': 'left'}
 
-        # Again, I'm okay with SQL essentially picking a quote at random - I really just want to link to the person's quote page.
+        # I'm okay with SQL essentially picking a quote at random - I really just want to link to the person's quote page.
             other_connections = []
         
             if len(other_person_names) > 0:
@@ -953,7 +953,7 @@ class Root(object):
                 else:
                     other_person_names[first_person_id] = {'name': None, 'connection': connection, 'side': 'left'}
 
-        # Again, I'm okay with SQL essentially picking a quote at random - I really just want to link to the person's quote page.
+        # I'm okay with SQL essentially picking a quote at random - I really just want to link to the person's quote page.
             other_connections = []
         
             if len(other_person_names) > 0:
@@ -1444,12 +1444,10 @@ class Root(object):
             else:  
                 org_table.append('<tr><td><b><a href="http://influenceexplorer.com/organization/{0}/{1}" target="_blank">{2}</a></b></td></tr>'.format(org_name.lower().replace(" ","-"), sunlight_id, org_name))                
 
-        # I'm okay with getting essentially an abitrary quote id selected in these queries.
-
-        database_cursor.execute("select persons.display_name, quotes.id from persons inner join quotes on persons.id = quotes.who_said where type = 1 and quote_text != '' limit 1")
+        database_cursor.execute("select persons.display_name, quotes.id from persons inner join quotes on persons.id = quotes.who_said where type = 1 and quote_text != '' order by random() limit 1")
         (one_politician, politician_quote) = database_cursor.fetchone()[:]
 
-        database_cursor.execute("select persons.display_name, quotes.id from persons inner join quotes on persons.id = quotes.who_said where type = 2 and quote_text != '' limit 1")
+        database_cursor.execute("select persons.display_name, quotes.id from persons inner join quotes on persons.id = quotes.who_said where type = 2 and quote_text != '' order by random() limit 1")
         (one_mediafigure, mediafigure_quote) = database_cursor.fetchone()[:]
 
         page_source.append('<div class="row"> <div class="small-12 small-centered columns"> <table cellpadding=4 style="vertical-align: middle; text-align: center;">')
