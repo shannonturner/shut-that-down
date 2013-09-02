@@ -1,3 +1,5 @@
+#!/usr/local/bin/python2.7
+
 # Shut That Down
 
 # Shut That Down is a collection of quotes by public figures tagged with different issues
@@ -1226,12 +1228,16 @@ class Root(object):
 
         page_source.append('<tr><td colspan=3>{0}</td></tr>'.format(table_heading))
 
+        added_persons = []
+
         for quote in quotes:
-            
-            if quotecount[quote['person_id']] > 1:
-                page_source.append('<tr><td><a href="quote?quote_id={0}"><b>{1}</b></a></td><td>{2}</td><td><a href="quote?quote_id={0}"><b>{3}</b></a> <br> ... and {4} other quotes</td></tr>'.format(quote['quote_id'], quote['name'], quote['type'], quote['text'], quotecount[quote['person_id']]-1))
-            else:
-                page_source.append('<tr><td><a href="quote?quote_id={0}"><b>{1}</b></a></td><td>{2}</td><td><a href="quote?quote_id={0}"><b>{3}</b></a></td></tr>'.format(quote['quote_id'], quote['name'], quote['type'], quote['text']))
+
+            if quote['person_id'] not in added_persons:
+                if quotecount[quote['person_id']] > 1:
+                    page_source.append('<tr><td><a href="quote?quote_id={0}"><b>{1}</b></a></td><td>{2}</td><td><a href="quote?quote_id={0}"><b>{3}</b></a> <br> ... and {4} other quotes</td></tr>'.format(quote['quote_id'], quote['name'], quote['type'], quote['text'], quotecount[quote['person_id']]-1))
+                else:
+                    page_source.append('<tr><td><a href="quote?quote_id={0}"><b>{1}</b></a></td><td>{2}</td><td><a href="quote?quote_id={0}"><b>{3}</b></a></td></tr>'.format(quote['quote_id'], quote['name'], quote['type'], quote['text']))
+                added_persons.append(quote['person_id'])
 
         page_source.append('</table> </div> </div>')
 
