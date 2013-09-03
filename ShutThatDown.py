@@ -1482,6 +1482,18 @@ class Root(object):
 
         page_source.append('<div class="row"> <div class="small-8 small-centered columns"> <table cellpadding=4 style="vertical-align: middle; text-align: center;">')
         page_source.append('<tr><td><h2>Shut That Down - Browse By State</h2></td></tr></table></div></div>')
+
+        page_source.append('<div class="row"> <div class="small-4 small-centered columns">')
+        page_source.append('<form id="change_page" name="change_page" method="get" action="inmystate"><select name="state" onChange="document.forms[\'change_page\'].submit();"><option value="">Choose your state</option>')
+
+        for iter_state in state_list:
+            if state == iter_state:
+                page_source.append('<option value="{0}" selected>{0}</option>\n'.format(iter_state))
+            else:
+                page_source.append('<option value="{0}">{0}</option>\n'.format(iter_state))
+
+        page_source.append('</select></form> </div> </div>')
+        
         page_source.append('<div class="row"> <div class="small-8 small-centered columns">')
 
         with open("statemap.txt") as state_map_file:
