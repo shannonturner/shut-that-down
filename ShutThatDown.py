@@ -719,13 +719,9 @@ class Root(object):
             quote_source.append('<table cellpadding=8 style="vertical-align:middle; text-align:center;"><tr><td colspan=2><h2><b>{0}</b></h2></td></tr><tr>'.format(person_displayname))
 
             try:
-                with open('200x250/{0}.jpg'.format(crp_id)): pass
-                quote_source.append('<td><img alt="{0}" title="{0}" src="200x250/{0}.jpg"></td>'.format(crp_id))
-            except IOError:
-                try:
-                    quote_source.append('<td><img alt="{0}" title="{0}" src="{0}"></td>'.format(sunlight_ie_summary['metadata']['photo_url']))
-                except KeyError:
-                    pass
+                quote_source.append('<td><img alt="{0}" title="{0}" src="{0}"></td>'.format(sunlight_ie_summary['metadata']['photo_url']))
+            except KeyError:
+                pass
 
             quote_source.append('<td><h3>"{0}"</h3></td></tr></table><br>&nbsp;<br>'.format(quote_text))
 
