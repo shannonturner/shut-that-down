@@ -145,6 +145,7 @@ class Root(object):
 
         page_source.append('<tr><td><b>Some notes on how Shut That Down tags certain quotes:</b></td></tr>')
         page_source.append("<tr><td>&bullet; Taking away women's agency, especially in regard to their bodily autonomy, is misogyny.</td></tr>")
+        page_source.append("<tr><td>&bullet; Rape apology, denial, and victim blaming, is misogyny.</td></tr>")
         page_source.append('<tr><td>&bullet; Much of transphobia is rooted in transmisogyny.</td></tr>')
         page_source.append('<tr><td>&bullet; Many xenophobic quotes are racist in nature.</td></tr>')
         page_source.append('</td></tr>')
@@ -1568,6 +1569,15 @@ class Root(object):
         page_source.append('</div> </div>')
 
         return wrap_in_css(page_source, "Submit new quote")
+
+    def error_page(self, **kwargs):
+
+        """ Cherrypy.Root.error_page(): Redirects any page that would fail to /index; if that fails, returns an error message.
+        """
+
+        del kwargs
+
+        return self.index()
              
     index.exposed = True
 
@@ -1575,6 +1585,7 @@ class Root(object):
     browse_persons.exposed = True
     browse_quotes.exposed = True
     enablers.exposed = True
+    error_page.exposed = True
     inmystate.exposed = True
     quote.exposed = True
     random_quote.exposed = True
@@ -1607,4 +1618,5 @@ if __name__ == "__main__":
     configuration_file = 'cfg.cfg'
 
     cherrypy.root = Root()
+    cherrypy.config.update({'error_page.default': cherrypy.root.error_page})
     cherrypy.quickstart(cherrypy.root, '/', configuration_file)    
