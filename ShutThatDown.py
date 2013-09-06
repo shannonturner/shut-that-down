@@ -1577,7 +1577,10 @@ class Root(object):
 
         del kwargs
 
-        return self.index()
+        try:
+            return self.index()
+        except Exception:
+            return wrap_in_css(['<div class="row"> <div class="small-centered small-4 columns">Oops! Did you find a bug in our code? Our development team has been notified. Thanks!</div> </div>'], "Oh no!")
              
     index.exposed = True
 
