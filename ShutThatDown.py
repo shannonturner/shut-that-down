@@ -95,7 +95,7 @@ class Root(object):
             for contribution in sunlight_contributions_list: # Sunlight's Influence Explorer breaks donations down by direct vs. employees, which is preferred.
 
                 if contribution['id'] is not None:
-                    donors_source.append('<tr><td><a href="http://influenceexplorer.com/organization/{0}/{1}" target="_blank"><img height=33 width=33 src="icons/sunlight.png" title="View {2} on Sunlight\'s Influence Explorer" alt="View {2} on Sunlight\'s Influence Explorer"></a>\n'.format(contribution['name'].lower().replace('/','').replace(' ','-'), contribution['id'], contribution['name']))
+                    donors_source.append('<tr><td><a href="http://influenceexplorer.com/organization/{0}/{1}" target="_blank"><img height=33 width=33 src="icons/sunlight.png" title="View {2} on Sunlight\'s Influence Explorer" alt="View {2} on Sunlight\'s Influence Explorer"></a>\n'.format(contribution['name'].lower().replace('/','').replace(' ','-').replace(' & ',' ').replace('&',''), contribution['id'], contribution['name']))
                 else:
                     donors_source.append('<tr><td>')
 
@@ -825,7 +825,7 @@ class Root(object):
                 for contribution in sunlight_contributions_list: # Sunlight's Influence Explorer breaks donations down by direct vs. employees, which is preferred.
 
                     if contribution['id'] is not None:
-                        donors_source.append('<tr><td><a href="http://influenceexplorer.com/organization/{0}/{1}?cycle={2}" target="_blank"><img height=33 width=33 src="icons/sunlight.png" title="View {3} on Sunlight\'s Influence Explorer" alt="View {3} on Sunlight\'s Influence Explorer"></a>\n'.format(contribution['name'].lower().replace('/','').replace(' ','-'), contribution['id'], cycle, contribution['name']))
+                        donors_source.append('<tr><td><a href="http://influenceexplorer.com/organization/{0}/{1}?cycle={2}" target="_blank"><img height=33 width=33 src="icons/sunlight.png" title="View {3} on Sunlight\'s Influence Explorer" alt="View {3} on Sunlight\'s Influence Explorer"></a>\n'.format(contribution['name'].lower().replace('/','').replace(' ','-').replace(' & ',' ').replace('&',''), contribution['id'], cycle, contribution['name']))
                     else:
                         donors_source.append('<tr><td>')
 
@@ -864,7 +864,7 @@ class Root(object):
                             donors_source.append('<tr><td>Not available at this time')
 
                     if sunlight_id is not None: # There's no guarantee that CRP will return the precise name that Sunlight's IE expects.  You might not be able to use this, or you might have to look it up anyway.
-                        donors_source.append('<tr><td><a href="http://influenceexplorer.com/organization/{0}/{1}?cycle={2}" target="_blank"><img height=33 width=33 src="icons/sunlight.png" title="View {3} on Sunlight\'s Influence Explorer" alt="View {3} on Sunlight\'s Influence Explorer"></a>\n'.format(contribution['@attributes']['org_name'].lower().replace('/','').replace(' ','-'), sunlight_id, cycle, contribution['@attributes']['org_name']))
+                        donors_source.append('<tr><td><a href="http://influenceexplorer.com/organization/{0}/{1}?cycle={2}" target="_blank"><img height=33 width=33 src="icons/sunlight.png" title="View {3} on Sunlight\'s Influence Explorer" alt="View {3} on Sunlight\'s Influence Explorer"></a>\n'.format(contribution['@attributes']['org_name'].lower().replace('/','').replace(' ','-').replace(' & ',' ').replace('&',''), sunlight_id, cycle, contribution['@attributes']['org_name']))
                     
                     if crp_id is not None:
                         donors_source.append('<a href="http://www.opensecrets.org/orgs/summary.php?id={0}" target="_blank"><img height=33 width=33 src="icons/opensecrets.png" title="View {1} on Open Secrets" alt="View {1} on Open Secrets"></a>\n'.format(crp_id, contribution['@attributes']['org_name']))
@@ -1445,7 +1445,7 @@ class Root(object):
                 if org_name != 'BLANK' and org_name.count(",") != 1 and org_name.isupper() == False:
                     org_table.append('<tr><td><b>{0}</b></td></tr>'.format(org_name))
             else:  
-                org_table.append('<tr><td><b><a href="http://influenceexplorer.com/organization/{0}/{1}" target="_blank">{2}</a></b></td></tr>'.format(org_name.lower().replace(" ","-"), sunlight_id, org_name))                
+                org_table.append('<tr><td><b><a href="http://influenceexplorer.com/organization/{0}/{1}" target="_blank">{2}</a></b></td></tr>'.format(org_name.lower().replace(" ","-").replace(' & ',' ').replace('&',''), sunlight_id, org_name))                
 
         database_cursor.execute("select persons.display_name, quotes.id from persons inner join quotes on persons.id = quotes.who_said where type = 1 and quote_text != '' order by random() limit 1")
         (one_politician, politician_quote) = database_cursor.fetchone()[:]
