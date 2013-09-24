@@ -747,7 +747,7 @@ class Root(object):
                 if sunlight_congress_summary['in_office'] == True:
                     sunlight_politician_current = "<td style='padding: 6px;'><b>In office</b></td>"
                 else:
-                    sunlight_politician_current = "<td style='background-color: #ffccff;padding: 6px;'><strong>SHUT DOWN</strong></td>"
+                    sunlight_politician_current = "<td style='background-color: #ffccff;padding: 6px;'><strong>Not in office</strong></td>"
 
                 bio_source.append('<table cellpadding=6 style="vertical-align: middle; text-align:center"><tr><td colspan=4>All about <b>{0}</b></td></tr>'.format(person_displayname))
 
@@ -790,7 +790,7 @@ class Root(object):
                     if sunlight_politician_summary['in_office'] == True:
                         sunlight_politician_current = "<td style='padding: 6px;'><b>In office</b></td>"
                     else:
-                        sunlight_politician_current = "<td style='background-color: #ffccff;padding: 6px;'><strong>SHUT DOWN</strong></td>"
+                        sunlight_politician_current = "<td style='background-color: #ffccff;padding: 6px;'><strong>Not in office</strong></td>"
 
                     bio_source.append('<table cellpadding=6 style="vertical-align: middle; text-align:center"><tr><td colspan=4 style="border: solid 1px;"><h3>All about <b>{0}</b></h3></td></tr>'.format(person_displayname))
 
