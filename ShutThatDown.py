@@ -30,6 +30,8 @@ class Root(object):
 
         """ Cherrypy.Root.index(): shutthatdown.com/ """
 
+        error_message = kwargs.get('error_message')
+        
         del kwargs # Having kwargs defined in the function definition means if someone uses /index?some_unhandled_parameter=something, their page won't crash
 
         database_connection = psycopg2.connect(self.database_connection_details)
@@ -55,6 +57,11 @@ class Root(object):
         # Build the page
 
         page_source = []
+
+        if error_message is None:
+            page_source.append('<!--Page Loaded Successfully-->') # Replace this when error handling
+        else:
+            page_source.append('<div class="row"> <div class="small-8 small-centered columns"> <p> <br> <i>{0}</i> <br> </p> </div> </div>'.format(error_message))
 
         page_source.append('<div class="row"> <div class="small-8 small-centered columns"> <table cellpadding=4 style="vertical-align: middle; text-align: center;">')
 
@@ -1575,10 +1582,14 @@ class Root(object):
         """ Cherrypy.Root.error_page(): Redirects any page that would fail to /index; if that fails, returns an error message.
         """
 
+        error_message = kwargs.get('error_message')
         del kwargs
-
+        
         try:
-            return self.index()
+            if error_message is None:
+                error_message = 'There was an error processing your request.  Please try again.  If this is a recurring issue, please notify our development team at <a href="mailto:inzfo@shutthatdown.com" target="_blank">inzfo@shutthatdown.com</a> -- be sure to remove the Z. '
+            error_message = {'error_message': error_message}
+            return self.index(**error_message)
         except Exception:
             return wrap_in_css(['<div class="row"> <div class="small-centered small-4 columns">Oops! Did you find a bug in our code? Our development team has been notified. Thanks!</div> </div>'], "Oh no!")
              
