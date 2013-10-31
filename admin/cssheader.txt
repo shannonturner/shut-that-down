@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>!!!DYNAMIC_TITLE!!! - Shut That Down</title>
+
+
+  <link rel="stylesheet" href="css/foundation.css" />
+  <link rel="icon" type="image/png" href="favicon.png">
+
+
+  <script src="js/vendor/custom.modernizr.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-43517517-1', 'shutthatdown.com');
+  ga('send', 'pageview');
+
+</script>
+
+</head>
+
+<body>
+
+<nav class="top-bar">
+  <ul class="title-area">
+
+    <li class="name">
+      <h1><a href="/">Shut That Down ADMIN</a></h1>
+    </li>
+
+  </ul>
+
+  <section class="top-bar-section" >
+
+    <ul class="left">
+
+      <li class="divider"></li>
+      <li><a href="tag_quote">Tag Quotes</a></li>
+
+	</ul>
+
+  </section>
+</nav>
+
+<div class="row"> 
+
+<div class="small-11 columns">&nbsp;</div>
+
+<div class="small-1 small-offset-11 columns">
+
+<!-- Twitter -->
+
+<a href="https://twitter.com/share" class="twitter-share-button" data-via="shutthatdown">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+<!-- Google +1 -->
+
+<!-- Place this tag where you want the +1 button to render. -->
+<div class="g-plusone" data-annotation="inline" data-width="300"></div>
+
+<!-- Place this tag after the last +1 button tag. -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+<!-- Tumblr -->
+
+<a href="http://www.tumblr.com/share" title="Share on Tumblr" style="display:inline-block; text-indent:-9999px; overflow:hidden; width:129px; height:20px; background:url('http://platform.tumblr.com/v1/share_3.png') top left no-repeat transparent;">Share on Tumblr</a>
+
+</div>
+
+</div>
+
+<br>
