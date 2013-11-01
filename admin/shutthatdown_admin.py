@@ -5,6 +5,9 @@ class Root(object):
 
     from shutthatdown_admin_index import index as index
     index.exposed = True
+
+    from shutthatdown_admin_newquote import newquote as newquote
+    newquote.exposed = True
     
     from shutthatdown_admin_tag_quote import tag_quote as tag_quote
     tag_quote.exposed = True
