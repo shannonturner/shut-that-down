@@ -10,7 +10,7 @@ def index(self, **kwargs):
     import psycopg2
     import shutthatdown_.shutthatdown_credentials as shutthatdown_credentials
 
-    import urllib, urllib2
+    import json, urllib, urllib2
 
     from shutthatdown_ import shutthatdown_wrapincss
     wrap_in_css = shutthatdown_wrapincss.wrap_in_css
