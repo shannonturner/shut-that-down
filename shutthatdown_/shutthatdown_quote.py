@@ -11,6 +11,7 @@ def quote(self, **kwargs):
     import psycopg2
     import shutthatdown_.shutthatdown_credentials as shutthatdown_credentials
     from crpapi import CRP, CRPApiError
+    import urllib, urllib2
 
     from shutthatdown_ import shutthatdown_wrapincss
     wrap_in_css = shutthatdown_wrapincss.wrap_in_css
