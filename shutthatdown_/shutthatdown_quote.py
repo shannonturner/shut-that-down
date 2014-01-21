@@ -43,6 +43,10 @@ def quote(self, **kwargs):
     database_cursor = database_connection.cursor()
     database_cursor.execute(select_quote_query)
 
+    sunlight_apikey = shutthatdown_credentials.sunlight_apikey
+    littlesis_apikey = shutthatdown_credentials.littlesis_apikey
+    crp_apikey = shutthatdown_credentials.crp_apikey
+
     try:
         (person_id, crp_id, bioguide_id, littlesis_id, littlesis_name, sunlight_id, person_displayname, person_firstname, person_lastname, person_type, person_gender, person_party, person_state, who_said, quote_text) = database_cursor.fetchone()
     except TypeError, e:

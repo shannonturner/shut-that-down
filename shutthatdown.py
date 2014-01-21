@@ -15,10 +15,6 @@ import shutthatdown_.shutthatdown_credentials as shutthatdown_credentials # Edit
 import urllib
 import urllib2
 
-CRP.apikey = shutthatdown_credentials.crp_apikey
-littlesis_apikey = shutthatdown_credentials.littlesis_apikey
-sunlight_apikey = shutthatdown_credentials.sunlight_apikey
-
 class Root(object):
 
     import shutthatdown_.shutthatdown_index

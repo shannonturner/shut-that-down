@@ -16,6 +16,10 @@ def index(self, **kwargs):
     database_connection = psycopg2.connect(shutthatdown_credentials.database_connection_details)
     database_cursor = database_connection.cursor()
 
+    sunlight_apikey = shutthatdown_credentials.sunlight_apikey
+    littlesis_apikey = shutthatdown_credentials.littlesis_apikey
+    crp_apikey = shutthatdown_credentials.crp_apikey
+
     database_cursor.execute("select persons.id, persons.display_name, persons.sunlight_id, quotes.id, quotes.quote_text from persons inner join quotes on persons.id = quotes.who_said where persons.sunlight_id != '' and quotes.quote_text != '' and persons.type = 1 order by random() limit 1")
 
     (person_id, person_displayname, sunlight_id, quote_id, quote_text) = database_cursor.fetchone()
