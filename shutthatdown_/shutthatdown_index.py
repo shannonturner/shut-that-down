@@ -56,7 +56,7 @@ def index(self, **kwargs):
     try:
         sunlight_pol_url = 'http://transparencydata.com/api/1.0/aggregates/pol/{0}/contributors.json?&apikey={1}'.format(sunlight_id, sunlight_apikey)
         sunlight_contributions_list = json.loads(urllib2.urlopen(sunlight_pol_url).read())
-    except urllib2.HTTPError:
+    except Exception:
         sunlight_contributions_list = []
     
     page_source.extend(quote_source)

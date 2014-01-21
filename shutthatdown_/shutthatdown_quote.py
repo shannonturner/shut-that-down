@@ -71,7 +71,7 @@ def quote(self, **kwargs):
             try:
                 sunlight_search_url = 'http://congress.api.sunlightfoundation.com/legislators?apikey={0}&query={1}&all_legislators=true'.format(sunlight_apikey, person_lastname)
                 sunlight_search_summary = json.loads(urllib2.urlopen(sunlight_search_url).read())
-            except urllib2.HTTPError:
+            except Exception:
                 sunlight_search_summary = {}
 
             try:
@@ -113,7 +113,7 @@ def quote(self, **kwargs):
             try:
                 sunlight_congress_url = 'http://congress.api.sunlightfoundation.com/legislators?apikey={0}&{1}&all_legislators=true'.format(sunlight_apikey, urllib.urlencode(sl_parameters))
                 sunlight_congress_summary = json.loads(urllib2.urlopen(sunlight_congress_url).read())['results']
-            except urllib2.HTTPError:
+            except Exception:
                 sunlight_congress_summary = {}
 
             sunlight_politician_summary = {}
@@ -162,7 +162,7 @@ def quote(self, **kwargs):
 
             try:
                 sunlight_ie_id = json.loads(urllib2.urlopen(sunlight_ie_url).read())[0]['id']
-            except urllib2.HTTPError:
+            except Exception:
                 sunlight_ie_id = None
             
             if sunlight_ie_id is not None and sunlight_id is None:
@@ -175,7 +175,7 @@ def quote(self, **kwargs):
             try:
                 sunlight_ie_url = 'http://transparencydata.com/api/1.0/entities/{0}.json?apikey={1}'.format(sunlight_id, sunlight_apikey)
                 sunlight_ie_summary = json.loads(urllib2.urlopen(sunlight_ie_url).read())
-            except urllib2.HTTPError:
+            except Exception:
                 sunlight_ie_summary = {}
 
             try:
@@ -211,7 +211,7 @@ def quote(self, **kwargs):
                 try:
                     sunlight_lookup_url = 'http://transparencydata.org/api/1.0/entities.json?apikey={0}&search={1}+{2}&type=politician'.format(sunlight_apikey, person_firstname, person_lastname)
                     sunlight_id_response = json.loads(urllib2.urlopen(sunlight_lookup_url).read())
-                except urllib2.HTTPError:
+                except Exception:
                     sunlight_id_response = []
                 
                 if len(sunlight_id_response) == 1:
@@ -243,7 +243,7 @@ def quote(self, **kwargs):
                         try:
                             sunlight_ie_url = 'http://transparencydata.com/api/1.0/entities/{0}.json?apikey={1}'.format(sunlight_id, sunlight_apikey)
                             sunlight_ie_summary = json.loads(urllib2.urlopen(sunlight_ie_url).read())
-                        except urllib2.HTTPError:
+                        except Exception:
                             sunlight_ie_summary = {}
                         
                         try:
@@ -260,7 +260,7 @@ def quote(self, **kwargs):
                 try:
                     sunlight_search_url = 'http://congress.api.sunlightfoundation.com/legislators?apikey={0}&query={1}&all_legislators=true'.format(sunlight_apikey, person_lastname)
                     sunlight_search_summary = json.loads(urllib2.urlopen(sunlight_search_url).read())
-                except urllib2.HTTPError:
+                except Exception:
                     sunlight_search_summary = {}
                 
                 try:
@@ -359,7 +359,7 @@ def quote(self, **kwargs):
 
             try:
                 sunlight_contributions_list = json.loads(urllib2.urlopen(sunlight_pol_url).read())
-            except urllib2.HTTPError:
+            except Exception:
                 sunlight_contributions_list = []
             
             # Checking whether sunlight_ids for these organizations have been saved in the database yet
@@ -418,7 +418,7 @@ def quote(self, **kwargs):
 
             try:
                 littlesis_lookup = json.loads(urllib2.urlopen(littlesis_lookup_url).read())
-            except urllib2.HTTPError:
+            except Exception:
                 littlesis_lookup = {}
             
             if len(littlesis_lookup) > 0:
