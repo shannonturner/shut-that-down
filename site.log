@@ -1,0 +1,3014 @@
+[21/Jan/2014:07:33:17] ENGINE Listening for SIGHUP.
+[21/Jan/2014:07:33:17] ENGINE Listening for SIGTERM.
+[21/Jan/2014:07:33:17] ENGINE Listening for SIGUSR1.
+[21/Jan/2014:07:33:17] ENGINE Bus STARTING
+[21/Jan/2014:07:33:17] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jan/2014:07:33:17] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Jan/2014:07:33:17] ENGINE Serving on 127.0.0.1:8080
+[21/Jan/2014:07:33:17] ENGINE Bus STARTED
+[21/Jan/2014:07:33:33] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_index.py", line 12, in index
+    database_connection = psycopg2.connect(shutthatdown_credentials.database_connection_details)
+  File "/Library/Python/2.7/site-packages/psycopg2/__init__.py", line 164, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, async=async)
+OperationalError: could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+
+
+[21/Jan/2014:07:33:33] HTTP 
+Request Headers:
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:07:35:46] ENGINE Restarting because /Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown.py changed.
+[21/Jan/2014:07:35:46] ENGINE Stopped thread 'Autoreloader'.
+[21/Jan/2014:07:35:46] ENGINE Bus STOPPING
+[21/Jan/2014:07:35:46] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jan/2014:07:35:46] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Jan/2014:07:35:46] ENGINE Bus STOPPED
+[21/Jan/2014:07:35:46] ENGINE Bus EXITING
+[21/Jan/2014:07:35:46] ENGINE Bus EXITED
+[21/Jan/2014:07:35:46] ENGINE Waiting for child threads to terminate...
+[21/Jan/2014:07:35:46] ENGINE Re-spawning shutthatdown.py
+[21/Jan/2014:07:35:46] ENGINE Listening for SIGHUP.
+[21/Jan/2014:07:35:46] ENGINE Listening for SIGTERM.
+[21/Jan/2014:07:35:46] ENGINE Listening for SIGUSR1.
+[21/Jan/2014:07:35:46] ENGINE Bus STARTING
+[21/Jan/2014:07:35:46] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jan/2014:07:35:46] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Jan/2014:07:35:46] ENGINE Serving on 127.0.0.1:8080
+[21/Jan/2014:07:35:46] ENGINE Bus STARTED
+[21/Jan/2014:07:36:22] ENGINE Restarting because /Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown.py changed.
+[21/Jan/2014:07:36:22] ENGINE Stopped thread 'Autoreloader'.
+[21/Jan/2014:07:36:22] ENGINE Bus STOPPING
+[21/Jan/2014:07:36:22] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jan/2014:07:36:22] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Jan/2014:07:36:22] ENGINE Bus STOPPED
+[21/Jan/2014:07:36:22] ENGINE Bus EXITING
+[21/Jan/2014:07:36:22] ENGINE Bus EXITED
+[21/Jan/2014:07:36:22] ENGINE Waiting for child threads to terminate...
+[21/Jan/2014:07:36:22] ENGINE Re-spawning shutthatdown.py
+[21/Jan/2014:07:36:22] ENGINE Listening for SIGHUP.
+[21/Jan/2014:07:36:22] ENGINE Listening for SIGTERM.
+[21/Jan/2014:07:36:22] ENGINE Listening for SIGUSR1.
+[21/Jan/2014:07:36:22] ENGINE Bus STARTING
+[21/Jan/2014:07:36:22] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jan/2014:07:36:22] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Jan/2014:07:36:22] ENGINE Serving on 127.0.0.1:8080
+[21/Jan/2014:07:36:22] ENGINE Bus STARTED
+[21/Jan/2014:07:38:17] ENGINE Restarting because /Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_error_page.py changed.
+[21/Jan/2014:07:38:17] ENGINE Stopped thread 'Autoreloader'.
+[21/Jan/2014:07:38:17] ENGINE Bus STOPPING
+[21/Jan/2014:07:38:17] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jan/2014:07:38:17] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Jan/2014:07:38:17] ENGINE Bus STOPPED
+[21/Jan/2014:07:38:17] ENGINE Bus EXITING
+[21/Jan/2014:07:38:17] ENGINE Bus EXITED
+[21/Jan/2014:07:38:17] ENGINE Waiting for child threads to terminate...
+[21/Jan/2014:07:38:17] ENGINE Re-spawning shutthatdown.py
+[21/Jan/2014:07:38:17] ENGINE Listening for SIGHUP.
+[21/Jan/2014:07:38:17] ENGINE Listening for SIGTERM.
+[21/Jan/2014:07:38:17] ENGINE Listening for SIGUSR1.
+[21/Jan/2014:07:38:17] ENGINE Bus STARTING
+[21/Jan/2014:07:38:17] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jan/2014:07:38:17] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Jan/2014:07:38:17] ENGINE Serving on 127.0.0.1:8080
+[21/Jan/2014:07:38:17] ENGINE Bus STARTED
+[21/Jan/2014:07:38:30] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_index.py", line 12, in index
+    database_connection = psycopg2.connect(shutthatdown_credentials.database_connection_details)
+  File "/Library/Python/2.7/site-packages/psycopg2/__init__.py", line 164, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, async=async)
+OperationalError: could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+
+
+[21/Jan/2014:07:38:30] HTTP 
+Request Headers:
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:07:38:30]  Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 102, in run
+    hook()
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 62, in __call__
+    return self.callback(**self.kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cptools.py", line 176, in _wrapper
+    if self.callable(**kwargs):
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/static.py", line 296, in staticdir
+    raise ValueError(msg)
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:07:38:30]  Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 102, in run
+    hook()
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 62, in __call__
+    return self.callback(**self.kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cptools.py", line 176, in _wrapper
+    if self.callable(**kwargs):
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/static.py", line 296, in staticdir
+    raise ValueError(msg)
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:07:38:30]  Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 102, in run
+    hook()
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 62, in __call__
+    return self.callback(**self.kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cptools.py", line 176, in _wrapper
+    if self.callable(**kwargs):
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/static.py", line 296, in staticdir
+    raise ValueError(msg)
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:07:38:30] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 653, in respond
+    self.hooks.run('before_handler')
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 112, in run
+    raise exc
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:07:38:30] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:8080/
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: */*
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:07:38:30] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 653, in respond
+    self.hooks.run('before_handler')
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 112, in run
+    raise exc
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:07:38:30] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:8080/
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/css,*/*;q=0.1
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:07:38:30] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 653, in respond
+    self.hooks.run('before_handler')
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 112, in run
+    raise exc
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:07:38:30] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:8080/
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: */*
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:07:38:30]  Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 102, in run
+    hook()
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 62, in __call__
+    return self.callback(**self.kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cptools.py", line 176, in _wrapper
+    if self.callable(**kwargs):
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/static.py", line 296, in staticdir
+    raise ValueError(msg)
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:07:38:30] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 653, in respond
+    self.hooks.run('before_handler')
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 112, in run
+    raise exc
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:07:38:30] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:8080/
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: */*
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:07:42:13] ENGINE Restarting because /Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_error_page.py changed.
+[21/Jan/2014:07:42:13] ENGINE Stopped thread 'Autoreloader'.
+[21/Jan/2014:07:42:13] ENGINE Bus STOPPING
+[21/Jan/2014:07:42:13] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jan/2014:07:42:13] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Jan/2014:07:42:13] ENGINE Bus STOPPED
+[21/Jan/2014:07:42:13] ENGINE Bus EXITING
+[21/Jan/2014:07:42:13] ENGINE Bus EXITED
+[21/Jan/2014:07:42:13] ENGINE Waiting for child threads to terminate...
+[21/Jan/2014:07:42:13] ENGINE Re-spawning shutthatdown.py
+[21/Jan/2014:07:42:13] ENGINE Listening for SIGHUP.
+[21/Jan/2014:07:42:13] ENGINE Listening for SIGTERM.
+[21/Jan/2014:07:42:13] ENGINE Listening for SIGUSR1.
+[21/Jan/2014:07:42:13] ENGINE Bus STARTING
+[21/Jan/2014:07:42:13] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jan/2014:07:42:13] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Jan/2014:07:42:13] ENGINE Serving on 127.0.0.1:8080
+[21/Jan/2014:07:42:13] ENGINE Bus STARTED
+[21/Jan/2014:07:42:16] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_index.py", line 12, in index
+    database_connection = psycopg2.connect(shutthatdown_credentials.database_connection_details)
+  File "/Library/Python/2.7/site-packages/psycopg2/__init__.py", line 164, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, async=async)
+OperationalError: could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+
+
+[21/Jan/2014:07:42:16] HTTP 
+Request Headers:
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:07:42:16]  Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 102, in run
+    hook()
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 62, in __call__
+    return self.callback(**self.kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cptools.py", line 176, in _wrapper
+    if self.callable(**kwargs):
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/static.py", line 296, in staticdir
+    raise ValueError(msg)
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:07:42:16]  Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 102, in run
+    hook()
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 62, in __call__
+    return self.callback(**self.kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cptools.py", line 176, in _wrapper
+    if self.callable(**kwargs):
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/static.py", line 296, in staticdir
+    raise ValueError(msg)
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:07:42:16] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 653, in respond
+    self.hooks.run('before_handler')
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 112, in run
+    raise exc
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:07:42:16] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 653, in respond
+    self.hooks.run('before_handler')
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 112, in run
+    raise exc
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:07:42:16]  Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 102, in run
+    hook()
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 62, in __call__
+    return self.callback(**self.kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cptools.py", line 176, in _wrapper
+    if self.callable(**kwargs):
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/static.py", line 296, in staticdir
+    raise ValueError(msg)
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:07:42:16] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:8080/
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: */*
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:07:42:16] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:8080/
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/css,*/*;q=0.1
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:07:42:16] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 653, in respond
+    self.hooks.run('before_handler')
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 112, in run
+    raise exc
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:07:42:16] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:8080/
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: */*
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:07:42:16]  Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 102, in run
+    hook()
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 62, in __call__
+    return self.callback(**self.kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cptools.py", line 176, in _wrapper
+    if self.callable(**kwargs):
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/static.py", line 296, in staticdir
+    raise ValueError(msg)
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:07:42:16] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 653, in respond
+    self.hooks.run('before_handler')
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 112, in run
+    raise exc
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:07:42:16] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:8080/
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: */*
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:07:42:17] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_index.py", line 12, in index
+    database_connection = psycopg2.connect(shutthatdown_credentials.database_connection_details)
+  File "/Library/Python/2.7/site-packages/psycopg2/__init__.py", line 164, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, async=async)
+OperationalError: could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+
+
+[21/Jan/2014:07:42:17] HTTP 
+Request Headers:
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:07:42:17]  Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 102, in run
+    hook()
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 62, in __call__
+    return self.callback(**self.kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cptools.py", line 176, in _wrapper
+    if self.callable(**kwargs):
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/static.py", line 296, in staticdir
+    raise ValueError(msg)
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:07:42:17]  Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 102, in run
+    hook()
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 62, in __call__
+    return self.callback(**self.kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cptools.py", line 176, in _wrapper
+    if self.callable(**kwargs):
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/static.py", line 296, in staticdir
+    raise ValueError(msg)
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:07:42:17]  Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 102, in run
+    hook()
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 62, in __call__
+    return self.callback(**self.kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cptools.py", line 176, in _wrapper
+    if self.callable(**kwargs):
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/static.py", line 296, in staticdir
+    raise ValueError(msg)
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:07:42:17] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 653, in respond
+    self.hooks.run('before_handler')
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 112, in run
+    raise exc
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:07:42:17] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 653, in respond
+    self.hooks.run('before_handler')
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 112, in run
+    raise exc
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:07:42:17] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 653, in respond
+    self.hooks.run('before_handler')
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 112, in run
+    raise exc
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:07:42:17] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:8080/
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/css,*/*;q=0.1
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:07:42:17] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:8080/
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: */*
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:07:42:17] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:8080/
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: */*
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:07:42:17]  Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 102, in run
+    hook()
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 62, in __call__
+    return self.callback(**self.kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cptools.py", line 176, in _wrapper
+    if self.callable(**kwargs):
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/static.py", line 296, in staticdir
+    raise ValueError(msg)
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:07:42:17] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 653, in respond
+    self.hooks.run('before_handler')
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 112, in run
+    raise exc
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:07:42:17] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:8080/
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: */*
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:07:42:26] ENGINE Restarting because /Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_error_page.py changed.
+[21/Jan/2014:07:42:26] ENGINE Stopped thread 'Autoreloader'.
+[21/Jan/2014:07:42:26] ENGINE Bus STOPPING
+[21/Jan/2014:07:42:27] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jan/2014:07:42:27] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Jan/2014:07:42:27] ENGINE Bus STOPPED
+[21/Jan/2014:07:42:27] ENGINE Bus EXITING
+[21/Jan/2014:07:42:27] ENGINE Bus EXITED
+[21/Jan/2014:07:42:27] ENGINE Waiting for child threads to terminate...
+[21/Jan/2014:07:42:27] ENGINE Re-spawning shutthatdown.py
+[21/Jan/2014:07:42:27] ENGINE Listening for SIGHUP.
+[21/Jan/2014:07:42:27] ENGINE Listening for SIGTERM.
+[21/Jan/2014:07:42:27] ENGINE Listening for SIGUSR1.
+[21/Jan/2014:07:42:27] ENGINE Bus STARTING
+[21/Jan/2014:07:42:27] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jan/2014:07:42:27] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Jan/2014:07:42:27] ENGINE Serving on 127.0.0.1:8080
+[21/Jan/2014:07:42:27] ENGINE Bus STARTED
+[21/Jan/2014:07:42:30] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_index.py", line 12, in index
+    database_connection = psycopg2.connect(shutthatdown_credentials.database_connection_details)
+  File "/Library/Python/2.7/site-packages/psycopg2/__init__.py", line 164, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, async=async)
+OperationalError: could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+
+
+[21/Jan/2014:07:42:30] HTTP 
+Request Headers:
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:07:42:30]  Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 102, in run
+    hook()
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 62, in __call__
+    return self.callback(**self.kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cptools.py", line 176, in _wrapper
+    if self.callable(**kwargs):
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/static.py", line 296, in staticdir
+    raise ValueError(msg)
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:07:42:30] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 653, in respond
+    self.hooks.run('before_handler')
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 112, in run
+    raise exc
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:07:42:30] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:8080/
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/css,*/*;q=0.1
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:07:42:30]  Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 102, in run
+    hook()
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 62, in __call__
+    return self.callback(**self.kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cptools.py", line 176, in _wrapper
+    if self.callable(**kwargs):
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/static.py", line 296, in staticdir
+    raise ValueError(msg)
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:07:42:30]  Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 102, in run
+    hook()
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 62, in __call__
+    return self.callback(**self.kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cptools.py", line 176, in _wrapper
+    if self.callable(**kwargs):
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/static.py", line 296, in staticdir
+    raise ValueError(msg)
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:07:42:30] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 653, in respond
+    self.hooks.run('before_handler')
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 112, in run
+    raise exc
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:07:42:30] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 653, in respond
+    self.hooks.run('before_handler')
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 112, in run
+    raise exc
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:07:42:30] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:8080/
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: */*
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:07:42:30] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:8080/
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: */*
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:07:42:30]  Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 102, in run
+    hook()
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 62, in __call__
+    return self.callback(**self.kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cptools.py", line 176, in _wrapper
+    if self.callable(**kwargs):
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/static.py", line 296, in staticdir
+    raise ValueError(msg)
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:07:42:30] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 653, in respond
+    self.hooks.run('before_handler')
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 112, in run
+    raise exc
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:07:42:30] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:8080/
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: */*
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:07:54:07] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_index.py", line 12, in index
+    database_connection = psycopg2.connect(shutthatdown_credentials.database_connection_details)
+  File "/Library/Python/2.7/site-packages/psycopg2/__init__.py", line 164, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, async=async)
+OperationalError: could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+
+
+[21/Jan/2014:07:54:07] HTTP 
+Request Headers:
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:07:54:07]  Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 102, in run
+    hook()
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 62, in __call__
+    return self.callback(**self.kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cptools.py", line 176, in _wrapper
+    if self.callable(**kwargs):
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/static.py", line 296, in staticdir
+    raise ValueError(msg)
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:07:54:07] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 653, in respond
+    self.hooks.run('before_handler')
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 112, in run
+    raise exc
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:07:54:07] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:8080/
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: */*
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:07:54:07]  Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 102, in run
+    hook()
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 62, in __call__
+    return self.callback(**self.kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cptools.py", line 176, in _wrapper
+    if self.callable(**kwargs):
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/static.py", line 296, in staticdir
+    raise ValueError(msg)
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:07:54:07]  Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 102, in run
+    hook()
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 62, in __call__
+    return self.callback(**self.kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cptools.py", line 176, in _wrapper
+    if self.callable(**kwargs):
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/static.py", line 296, in staticdir
+    raise ValueError(msg)
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:07:54:07] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 653, in respond
+    self.hooks.run('before_handler')
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 112, in run
+    raise exc
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:07:54:07] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 653, in respond
+    self.hooks.run('before_handler')
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 112, in run
+    raise exc
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:07:54:07] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:8080/
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: */*
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:07:54:07] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:8080/
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/css,*/*;q=0.1
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:07:54:07]  Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 102, in run
+    hook()
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 62, in __call__
+    return self.callback(**self.kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cptools.py", line 176, in _wrapper
+    if self.callable(**kwargs):
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/static.py", line 296, in staticdir
+    raise ValueError(msg)
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:07:54:07] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 653, in respond
+    self.hooks.run('before_handler')
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 112, in run
+    raise exc
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:07:54:07] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:8080/
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: */*
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:07:54:09] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_index.py", line 12, in index
+    database_connection = psycopg2.connect(shutthatdown_credentials.database_connection_details)
+  File "/Library/Python/2.7/site-packages/psycopg2/__init__.py", line 164, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, async=async)
+OperationalError: could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+
+
+[21/Jan/2014:07:54:09] HTTP 
+Request Headers:
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:07:54:09]  Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 102, in run
+    hook()
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 62, in __call__
+    return self.callback(**self.kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cptools.py", line 176, in _wrapper
+    if self.callable(**kwargs):
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/static.py", line 296, in staticdir
+    raise ValueError(msg)
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:07:54:09]  Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 102, in run
+    hook()
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 62, in __call__
+    return self.callback(**self.kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cptools.py", line 176, in _wrapper
+    if self.callable(**kwargs):
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/static.py", line 296, in staticdir
+    raise ValueError(msg)
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:07:54:09]  Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 102, in run
+    hook()
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 62, in __call__
+    return self.callback(**self.kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cptools.py", line 176, in _wrapper
+    if self.callable(**kwargs):
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/static.py", line 296, in staticdir
+    raise ValueError(msg)
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:07:54:09] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 653, in respond
+    self.hooks.run('before_handler')
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 112, in run
+    raise exc
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:07:54:09] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 653, in respond
+    self.hooks.run('before_handler')
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 112, in run
+    raise exc
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:07:54:09] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:8080/
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: */*
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:07:54:09] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 653, in respond
+    self.hooks.run('before_handler')
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 112, in run
+    raise exc
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:07:54:09] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:8080/
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/css,*/*;q=0.1
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:07:54:09] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:8080/
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: */*
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:07:54:09]  Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 102, in run
+    hook()
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 62, in __call__
+    return self.callback(**self.kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cptools.py", line 176, in _wrapper
+    if self.callable(**kwargs):
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/static.py", line 296, in staticdir
+    raise ValueError(msg)
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:07:54:09] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 653, in respond
+    self.hooks.run('before_handler')
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 112, in run
+    raise exc
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:07:54:09] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:8080/
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: */*
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:07:55:59] ENGINE Restarting because /Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown.py changed.
+[21/Jan/2014:07:55:59] ENGINE Stopped thread 'Autoreloader'.
+[21/Jan/2014:07:55:59] ENGINE Bus STOPPING
+[21/Jan/2014:07:55:59] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jan/2014:07:55:59] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Jan/2014:07:55:59] ENGINE Bus STOPPED
+[21/Jan/2014:07:55:59] ENGINE Bus EXITING
+[21/Jan/2014:07:55:59] ENGINE Bus EXITED
+[21/Jan/2014:07:55:59] ENGINE Waiting for child threads to terminate...
+[21/Jan/2014:07:55:59] ENGINE Re-spawning shutthatdown.py
+[21/Jan/2014:07:59:17] ENGINE Listening for SIGHUP.
+[21/Jan/2014:07:59:17] ENGINE Listening for SIGTERM.
+[21/Jan/2014:07:59:17] ENGINE Listening for SIGUSR1.
+[21/Jan/2014:07:59:17] ENGINE Bus STARTING
+[21/Jan/2014:07:59:17] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jan/2014:07:59:17] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Jan/2014:07:59:17] ENGINE Serving on 127.0.0.1:8080
+[21/Jan/2014:07:59:17] ENGINE Bus STARTED
+[21/Jan/2014:07:59:23] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_index.py", line 12, in index
+    database_connection = psycopg2.connect(shutthatdown_credentials.database_connection_details)
+  File "/Library/Python/2.7/site-packages/psycopg2/__init__.py", line 164, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, async=async)
+OperationalError: could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+
+
+[21/Jan/2014:07:59:23] HTTP 
+Request Headers:
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:07:59:23]  Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 102, in run
+    hook()
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 62, in __call__
+    return self.callback(**self.kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cptools.py", line 176, in _wrapper
+    if self.callable(**kwargs):
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/static.py", line 296, in staticdir
+    raise ValueError(msg)
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:07:59:23]  Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 102, in run
+    hook()
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 62, in __call__
+    return self.callback(**self.kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cptools.py", line 176, in _wrapper
+    if self.callable(**kwargs):
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/static.py", line 296, in staticdir
+    raise ValueError(msg)
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:07:59:23] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 653, in respond
+    self.hooks.run('before_handler')
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 112, in run
+    raise exc
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:07:59:23]  Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 102, in run
+    hook()
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 62, in __call__
+    return self.callback(**self.kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cptools.py", line 176, in _wrapper
+    if self.callable(**kwargs):
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/static.py", line 296, in staticdir
+    raise ValueError(msg)
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:07:59:23] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:8080/
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/css,*/*;q=0.1
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:07:59:23] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 653, in respond
+    self.hooks.run('before_handler')
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 112, in run
+    raise exc
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:07:59:23] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 653, in respond
+    self.hooks.run('before_handler')
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 112, in run
+    raise exc
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:07:59:23] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:8080/
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: */*
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:07:59:23] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:8080/
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: */*
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:07:59:23]  Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 102, in run
+    hook()
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 62, in __call__
+    return self.callback(**self.kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cptools.py", line 176, in _wrapper
+    if self.callable(**kwargs):
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/static.py", line 296, in staticdir
+    raise ValueError(msg)
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:07:59:23] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 653, in respond
+    self.hooks.run('before_handler')
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 112, in run
+    raise exc
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:07:59:23] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:8080/
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: */*
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:08:00:11] ENGINE Restarting because /Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown.py changed.
+[21/Jan/2014:08:00:11] ENGINE Stopped thread 'Autoreloader'.
+[21/Jan/2014:08:00:11] ENGINE Bus STOPPING
+[21/Jan/2014:08:00:11] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jan/2014:08:00:11] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Jan/2014:08:00:11] ENGINE Bus STOPPED
+[21/Jan/2014:08:00:11] ENGINE Bus EXITING
+[21/Jan/2014:08:00:11] ENGINE Bus EXITED
+[21/Jan/2014:08:00:11] ENGINE Waiting for child threads to terminate...
+[21/Jan/2014:08:00:11] ENGINE Re-spawning shutthatdown.py
+[21/Jan/2014:08:00:11] ENGINE Listening for SIGHUP.
+[21/Jan/2014:08:00:11] ENGINE Listening for SIGTERM.
+[21/Jan/2014:08:00:11] ENGINE Listening for SIGUSR1.
+[21/Jan/2014:08:00:11] ENGINE Bus STARTING
+[21/Jan/2014:08:00:11] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jan/2014:08:00:11] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Jan/2014:08:00:11] ENGINE Serving on 127.0.0.1:8080
+[21/Jan/2014:08:00:11] ENGINE Bus STARTED
+[21/Jan/2014:08:04:42] ENGINE Restarting because /Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown.py changed.
+[21/Jan/2014:08:04:42] ENGINE Stopped thread 'Autoreloader'.
+[21/Jan/2014:08:04:42] ENGINE Bus STOPPING
+[21/Jan/2014:08:04:42] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jan/2014:08:04:42] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Jan/2014:08:04:42] ENGINE Bus STOPPED
+[21/Jan/2014:08:04:42] ENGINE Bus EXITING
+[21/Jan/2014:08:04:42] ENGINE Bus EXITED
+[21/Jan/2014:08:04:42] ENGINE Waiting for child threads to terminate...
+[21/Jan/2014:08:04:42] ENGINE Re-spawning shutthatdown.py
+[21/Jan/2014:08:04:42] ENGINE Listening for SIGHUP.
+[21/Jan/2014:08:04:42] ENGINE Listening for SIGTERM.
+[21/Jan/2014:08:04:42] ENGINE Listening for SIGUSR1.
+[21/Jan/2014:08:04:42] ENGINE Bus STARTING
+[21/Jan/2014:08:04:42] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jan/2014:08:04:42] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Jan/2014:08:04:42] ENGINE Serving on 127.0.0.1:8080
+[21/Jan/2014:08:04:42] ENGINE Bus STARTED
+[21/Jan/2014:08:04:49] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_index.py", line 12, in index
+    database_connection = psycopg2.connect(shutthatdown_credentials.database_connection_details)
+  File "/Library/Python/2.7/site-packages/psycopg2/__init__.py", line 164, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, async=async)
+OperationalError: could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+
+
+[21/Jan/2014:08:04:49] HTTP 
+Request Headers:
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:08:04:49]  Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 102, in run
+    hook()
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 62, in __call__
+    return self.callback(**self.kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cptools.py", line 176, in _wrapper
+    if self.callable(**kwargs):
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/static.py", line 296, in staticdir
+    raise ValueError(msg)
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:08:04:49] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 653, in respond
+    self.hooks.run('before_handler')
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 112, in run
+    raise exc
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:08:04:49]  Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 102, in run
+    hook()
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 62, in __call__
+    return self.callback(**self.kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cptools.py", line 176, in _wrapper
+    if self.callable(**kwargs):
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/static.py", line 296, in staticdir
+    raise ValueError(msg)
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:08:04:49] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:8080/
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: */*
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:08:04:49]  Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 102, in run
+    hook()
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 62, in __call__
+    return self.callback(**self.kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cptools.py", line 176, in _wrapper
+    if self.callable(**kwargs):
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/static.py", line 296, in staticdir
+    raise ValueError(msg)
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:08:04:49] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 653, in respond
+    self.hooks.run('before_handler')
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 112, in run
+    raise exc
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:08:04:49] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 653, in respond
+    self.hooks.run('before_handler')
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 112, in run
+    raise exc
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:08:04:49] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:8080/
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/css,*/*;q=0.1
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:08:04:49] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:8080/
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: */*
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:08:04:49]  Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 102, in run
+    hook()
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 62, in __call__
+    return self.callback(**self.kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cptools.py", line 176, in _wrapper
+    if self.callable(**kwargs):
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/static.py", line 296, in staticdir
+    raise ValueError(msg)
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:08:04:49] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 653, in respond
+    self.hooks.run('before_handler')
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 112, in run
+    raise exc
+ValueError: Static dir requires an absolute dir (or root).
+
+[21/Jan/2014:08:04:49] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:8080/
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: */*
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:08:05:38] ENGINE Restarting because /Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown.py changed.
+[21/Jan/2014:08:05:38] ENGINE Stopped thread 'Autoreloader'.
+[21/Jan/2014:08:05:38] ENGINE Bus STOPPING
+[21/Jan/2014:08:05:38] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jan/2014:08:05:38] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Jan/2014:08:05:38] ENGINE Bus STOPPED
+[21/Jan/2014:08:05:38] ENGINE Bus EXITING
+[21/Jan/2014:08:05:38] ENGINE Bus EXITED
+[21/Jan/2014:08:05:38] ENGINE Waiting for child threads to terminate...
+[21/Jan/2014:08:05:38] ENGINE Re-spawning shutthatdown.py
+[21/Jan/2014:08:05:38] ENGINE Listening for SIGHUP.
+[21/Jan/2014:08:05:38] ENGINE Listening for SIGTERM.
+[21/Jan/2014:08:05:38] ENGINE Listening for SIGUSR1.
+[21/Jan/2014:08:05:38] ENGINE Bus STARTING
+[21/Jan/2014:08:05:38] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jan/2014:08:05:38] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Jan/2014:08:05:38] ENGINE Serving on 127.0.0.1:8080
+[21/Jan/2014:08:05:38] ENGINE Bus STARTED
+[21/Jan/2014:08:06:11] ENGINE Restarting because /Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown.py changed.
+[21/Jan/2014:08:06:11] ENGINE Stopped thread 'Autoreloader'.
+[21/Jan/2014:08:06:11] ENGINE Bus STOPPING
+[21/Jan/2014:08:06:11] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jan/2014:08:06:11] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Jan/2014:08:06:11] ENGINE Bus STOPPED
+[21/Jan/2014:08:06:11] ENGINE Bus EXITING
+[21/Jan/2014:08:06:11] ENGINE Bus EXITED
+[21/Jan/2014:08:06:11] ENGINE Waiting for child threads to terminate...
+[21/Jan/2014:08:06:11] ENGINE Re-spawning shutthatdown.py
+[21/Jan/2014:08:06:11] ENGINE Listening for SIGHUP.
+[21/Jan/2014:08:06:11] ENGINE Listening for SIGTERM.
+[21/Jan/2014:08:06:11] ENGINE Listening for SIGUSR1.
+[21/Jan/2014:08:06:11] ENGINE Bus STARTING
+[21/Jan/2014:08:06:11] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jan/2014:08:06:11] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Jan/2014:08:06:11] ENGINE Serving on 127.0.0.1:8080
+[21/Jan/2014:08:06:11] ENGINE Bus STARTED
+[21/Jan/2014:08:06:37] ENGINE Restarting because /Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown.py changed.
+[21/Jan/2014:08:06:37] ENGINE Stopped thread 'Autoreloader'.
+[21/Jan/2014:08:06:37] ENGINE Bus STOPPING
+[21/Jan/2014:08:06:37] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jan/2014:08:06:37] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Jan/2014:08:06:37] ENGINE Bus STOPPED
+[21/Jan/2014:08:06:37] ENGINE Bus EXITING
+[21/Jan/2014:08:06:37] ENGINE Bus EXITED
+[21/Jan/2014:08:06:37] ENGINE Waiting for child threads to terminate...
+[21/Jan/2014:08:06:37] ENGINE Re-spawning shutthatdown.py
+[21/Jan/2014:08:06:37] ENGINE Listening for SIGHUP.
+[21/Jan/2014:08:06:37] ENGINE Listening for SIGTERM.
+[21/Jan/2014:08:06:37] ENGINE Listening for SIGUSR1.
+[21/Jan/2014:08:06:37] ENGINE Bus STARTING
+[21/Jan/2014:08:06:37] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jan/2014:08:06:37] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Jan/2014:08:06:37] ENGINE Serving on 127.0.0.1:8080
+[21/Jan/2014:08:06:37] ENGINE Bus STARTED
+[21/Jan/2014:08:09:48] ENGINE Restarting because /Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown.py changed.
+[21/Jan/2014:08:09:48] ENGINE Stopped thread 'Autoreloader'.
+[21/Jan/2014:08:09:48] ENGINE Bus STOPPING
+[21/Jan/2014:08:09:48] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jan/2014:08:09:48] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Jan/2014:08:09:48] ENGINE Bus STOPPED
+[21/Jan/2014:08:09:48] ENGINE Bus EXITING
+[21/Jan/2014:08:09:48] ENGINE Bus EXITED
+[21/Jan/2014:08:09:48] ENGINE Waiting for child threads to terminate...
+[21/Jan/2014:08:09:48] ENGINE Re-spawning shutthatdown.py
+[21/Jan/2014:08:09:48] ENGINE Listening for SIGHUP.
+[21/Jan/2014:08:09:48] ENGINE Listening for SIGTERM.
+[21/Jan/2014:08:09:48] ENGINE Listening for SIGUSR1.
+[21/Jan/2014:08:09:48] ENGINE Bus STARTING
+[21/Jan/2014:08:09:48] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jan/2014:08:09:48] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Jan/2014:08:09:49] ENGINE Serving on 127.0.0.1:8080
+[21/Jan/2014:08:09:49] ENGINE Bus STARTED
+[21/Jan/2014:08:10:29] ENGINE Restarting because /Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown.py changed.
+[21/Jan/2014:08:10:29] ENGINE Stopped thread 'Autoreloader'.
+[21/Jan/2014:08:10:29] ENGINE Bus STOPPING
+[21/Jan/2014:08:10:29] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jan/2014:08:10:29] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Jan/2014:08:10:29] ENGINE Bus STOPPED
+[21/Jan/2014:08:10:29] ENGINE Bus EXITING
+[21/Jan/2014:08:10:29] ENGINE Bus EXITED
+[21/Jan/2014:08:10:29] ENGINE Waiting for child threads to terminate...
+[21/Jan/2014:08:10:29] ENGINE Re-spawning shutthatdown.py
+[21/Jan/2014:08:10:29] ENGINE Listening for SIGHUP.
+[21/Jan/2014:08:10:29] ENGINE Listening for SIGTERM.
+[21/Jan/2014:08:10:29] ENGINE Listening for SIGUSR1.
+[21/Jan/2014:08:10:29] ENGINE Bus STARTING
+[21/Jan/2014:08:10:29] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jan/2014:08:10:29] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Jan/2014:08:10:29] ENGINE Serving on 127.0.0.1:8080
+[21/Jan/2014:08:10:29] ENGINE Bus STARTED
+[21/Jan/2014:08:15:22] ENGINE Restarting because /Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown.py changed.
+[21/Jan/2014:08:15:22] ENGINE Stopped thread 'Autoreloader'.
+[21/Jan/2014:08:15:22] ENGINE Bus STOPPING
+[21/Jan/2014:08:15:22] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jan/2014:08:15:22] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Jan/2014:08:15:22] ENGINE Bus STOPPED
+[21/Jan/2014:08:15:22] ENGINE Bus EXITING
+[21/Jan/2014:08:15:22] ENGINE Bus EXITED
+[21/Jan/2014:08:15:22] ENGINE Waiting for child threads to terminate...
+[21/Jan/2014:08:15:22] ENGINE Re-spawning shutthatdown.py
+[21/Jan/2014:08:15:22] ENGINE Listening for SIGHUP.
+[21/Jan/2014:08:15:22] ENGINE Listening for SIGTERM.
+[21/Jan/2014:08:15:22] ENGINE Listening for SIGUSR1.
+[21/Jan/2014:08:15:22] ENGINE Bus STARTING
+[21/Jan/2014:08:15:22] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jan/2014:08:15:22] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Jan/2014:08:15:22] ENGINE Serving on 127.0.0.1:8080
+[21/Jan/2014:08:15:22] ENGINE Bus STARTED
+[21/Jan/2014:08:15:34] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_index.py", line 12, in index
+    database_connection = psycopg2.connect(shutthatdown_credentials.database_connection_details)
+  File "/Library/Python/2.7/site-packages/psycopg2/__init__.py", line 164, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, async=async)
+OperationalError: could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+
+
+[21/Jan/2014:08:15:34] HTTP 
+Request Headers:
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:08:17:13] ENGINE Restarting because /Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown.py changed.
+[21/Jan/2014:08:17:13] ENGINE Stopped thread 'Autoreloader'.
+[21/Jan/2014:08:17:13] ENGINE Bus STOPPING
+[21/Jan/2014:08:17:13] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jan/2014:08:17:13] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Jan/2014:08:17:13] ENGINE Bus STOPPED
+[21/Jan/2014:08:17:13] ENGINE Bus EXITING
+[21/Jan/2014:08:17:13] ENGINE Bus EXITED
+[21/Jan/2014:08:17:13] ENGINE Waiting for child threads to terminate...
+[21/Jan/2014:08:17:13] ENGINE Re-spawning shutthatdown.py
+[21/Jan/2014:08:17:13] ENGINE Listening for SIGHUP.
+[21/Jan/2014:08:17:13] ENGINE Listening for SIGTERM.
+[21/Jan/2014:08:17:13] ENGINE Listening for SIGUSR1.
+[21/Jan/2014:08:17:13] ENGINE Bus STARTING
+[21/Jan/2014:08:17:13] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jan/2014:08:17:13] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Jan/2014:08:17:13] ENGINE Serving on 127.0.0.1:8080
+[21/Jan/2014:08:17:13] ENGINE Bus STARTED
+[21/Jan/2014:08:17:46] ENGINE Restarting because /Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown.py changed.
+[21/Jan/2014:08:17:46] ENGINE Stopped thread 'Autoreloader'.
+[21/Jan/2014:08:17:46] ENGINE Bus STOPPING
+[21/Jan/2014:08:17:46] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jan/2014:08:17:46] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Jan/2014:08:17:46] ENGINE Bus STOPPED
+[21/Jan/2014:08:17:46] ENGINE Bus EXITING
+[21/Jan/2014:08:17:46] ENGINE Bus EXITED
+[21/Jan/2014:08:17:46] ENGINE Waiting for child threads to terminate...
+[21/Jan/2014:08:17:46] ENGINE Re-spawning shutthatdown.py
+[21/Jan/2014:08:17:46] ENGINE Listening for SIGHUP.
+[21/Jan/2014:08:17:46] ENGINE Listening for SIGTERM.
+[21/Jan/2014:08:17:46] ENGINE Listening for SIGUSR1.
+[21/Jan/2014:08:17:46] ENGINE Bus STARTING
+[21/Jan/2014:08:17:46] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Jan/2014:08:17:46] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jan/2014:08:17:46] ENGINE Serving on 127.0.0.1:8080
+[21/Jan/2014:08:17:46] ENGINE Bus STARTED
+[21/Jan/2014:08:17:50] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_index.py", line 12, in index
+    database_connection = psycopg2.connect(shutthatdown_credentials.database_connection_details)
+  File "/Library/Python/2.7/site-packages/psycopg2/__init__.py", line 164, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, async=async)
+OperationalError: could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+
+
+[21/Jan/2014:08:17:50] HTTP 
+Request Headers:
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:08:19:54] ENGINE Restarting because /Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown.py changed.
+[21/Jan/2014:08:19:54] ENGINE Stopped thread 'Autoreloader'.
+[21/Jan/2014:08:19:54] ENGINE Bus STOPPING
+[21/Jan/2014:08:19:54] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jan/2014:08:19:54] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Jan/2014:08:19:54] ENGINE Bus STOPPED
+[21/Jan/2014:08:19:54] ENGINE Bus EXITING
+[21/Jan/2014:08:19:54] ENGINE Bus EXITED
+[21/Jan/2014:08:19:54] ENGINE Waiting for child threads to terminate...
+[21/Jan/2014:08:19:54] ENGINE Re-spawning shutthatdown.py
+[21/Jan/2014:08:20:10] ENGINE Listening for SIGHUP.
+[21/Jan/2014:08:20:10] ENGINE Listening for SIGTERM.
+[21/Jan/2014:08:20:10] ENGINE Listening for SIGUSR1.
+[21/Jan/2014:08:20:10] ENGINE Bus STARTING
+[21/Jan/2014:08:20:10] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Jan/2014:08:20:10] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jan/2014:08:20:10] ENGINE Serving on 127.0.0.1:8080
+[21/Jan/2014:08:20:10] ENGINE Bus STARTED
+[21/Jan/2014:08:20:12] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_index.py", line 12, in index
+    database_connection = psycopg2.connect(shutthatdown_credentials.database_connection_details)
+  File "/Library/Python/2.7/site-packages/psycopg2/__init__.py", line 164, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, async=async)
+OperationalError: could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+
+
+[21/Jan/2014:08:20:12] HTTP 
+Request Headers:
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:08:20:49] ENGINE Restarting because /Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown.py changed.
+[21/Jan/2014:08:20:49] ENGINE Stopped thread 'Autoreloader'.
+[21/Jan/2014:08:20:49] ENGINE Bus STOPPING
+[21/Jan/2014:08:20:49] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jan/2014:08:20:49] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Jan/2014:08:20:49] ENGINE Bus STOPPED
+[21/Jan/2014:08:20:49] ENGINE Bus EXITING
+[21/Jan/2014:08:20:49] ENGINE Bus EXITED
+[21/Jan/2014:08:20:49] ENGINE Waiting for child threads to terminate...
+[21/Jan/2014:08:20:49] ENGINE Re-spawning shutthatdown.py
+[21/Jan/2014:08:20:49] ENGINE Listening for SIGHUP.
+[21/Jan/2014:08:20:49] ENGINE Listening for SIGTERM.
+[21/Jan/2014:08:20:49] ENGINE Listening for SIGUSR1.
+[21/Jan/2014:08:20:49] ENGINE Bus STARTING
+[21/Jan/2014:08:20:49] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Jan/2014:08:20:49] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jan/2014:08:20:49] ENGINE Serving on 127.0.0.1:8080
+[21/Jan/2014:08:20:49] ENGINE Bus STARTED
+[21/Jan/2014:08:21:59] ENGINE Restarting because /Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_error_page.py changed.
+[21/Jan/2014:08:21:59] ENGINE Stopped thread 'Autoreloader'.
+[21/Jan/2014:08:21:59] ENGINE Bus STOPPING
+[21/Jan/2014:08:21:59] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jan/2014:08:21:59] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Jan/2014:08:21:59] ENGINE Bus STOPPED
+[21/Jan/2014:08:21:59] ENGINE Bus EXITING
+[21/Jan/2014:08:21:59] ENGINE Bus EXITED
+[21/Jan/2014:08:22:00] ENGINE Waiting for child threads to terminate...
+[21/Jan/2014:08:22:00] ENGINE Re-spawning shutthatdown.py
+[21/Jan/2014:08:36:16] ENGINE Listening for SIGHUP.
+[21/Jan/2014:08:36:16] ENGINE Listening for SIGTERM.
+[21/Jan/2014:08:36:16] ENGINE Listening for SIGUSR1.
+[21/Jan/2014:08:36:16] ENGINE Bus STARTING
+[21/Jan/2014:08:36:16] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jan/2014:08:36:16] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Jan/2014:08:36:16] ENGINE Serving on 127.0.0.1:8080
+[21/Jan/2014:08:36:16] ENGINE Bus STARTED
+[21/Jan/2014:08:36:21] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 42, in __call__
+    raise x
+TypeError: 'module' object is not callable
+
+[21/Jan/2014:08:36:21] HTTP 
+Request Headers:
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:08:39:07] ENGINE Restarting because /Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_/shutthatdown_index.py changed.
+[21/Jan/2014:08:39:07] ENGINE Stopped thread 'Autoreloader'.
+[21/Jan/2014:08:39:07] ENGINE Bus STOPPING
+[21/Jan/2014:08:39:07] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jan/2014:08:39:07] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Jan/2014:08:39:07] ENGINE Bus STOPPED
+[21/Jan/2014:08:39:07] ENGINE Bus EXITING
+[21/Jan/2014:08:39:07] ENGINE Bus EXITED
+[21/Jan/2014:08:39:07] ENGINE Waiting for child threads to terminate...
+[21/Jan/2014:08:39:07] ENGINE Re-spawning shutthatdown.py
+[21/Jan/2014:08:39:07] ENGINE Listening for SIGHUP.
+[21/Jan/2014:08:39:07] ENGINE Listening for SIGTERM.
+[21/Jan/2014:08:39:07] ENGINE Listening for SIGUSR1.
+[21/Jan/2014:08:39:07] ENGINE Bus STARTING
+[21/Jan/2014:08:39:07] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jan/2014:08:39:07] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Jan/2014:08:39:07] ENGINE Serving on 127.0.0.1:8080
+[21/Jan/2014:08:39:07] ENGINE Bus STARTED
+[21/Jan/2014:08:39:19] ENGINE Restarting because /Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_/shutthatdown_index.py changed.
+[21/Jan/2014:08:39:19] ENGINE Stopped thread 'Autoreloader'.
+[21/Jan/2014:08:39:19] ENGINE Bus STOPPING
+[21/Jan/2014:08:39:19] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jan/2014:08:39:19] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Jan/2014:08:39:19] ENGINE Bus STOPPED
+[21/Jan/2014:08:39:19] ENGINE Bus EXITING
+[21/Jan/2014:08:39:19] ENGINE Bus EXITED
+[21/Jan/2014:08:39:19] ENGINE Waiting for child threads to terminate...
+[21/Jan/2014:08:39:19] ENGINE Re-spawning shutthatdown.py
+[21/Jan/2014:08:39:19] ENGINE Listening for SIGHUP.
+[21/Jan/2014:08:39:19] ENGINE Listening for SIGTERM.
+[21/Jan/2014:08:39:19] ENGINE Listening for SIGUSR1.
+[21/Jan/2014:08:39:19] ENGINE Bus STARTING
+[21/Jan/2014:08:39:19] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jan/2014:08:39:19] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Jan/2014:08:39:19] ENGINE Serving on 127.0.0.1:8080
+[21/Jan/2014:08:39:19] ENGINE Bus STARTED
+[21/Jan/2014:08:39:27] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 42, in __call__
+    raise x
+TypeError: 'module' object is not callable
+
+[21/Jan/2014:08:39:27] HTTP 
+Request Headers:
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:08:39:29] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 42, in __call__
+    raise x
+TypeError: 'module' object is not callable
+
+[21/Jan/2014:08:39:29] HTTP 
+Request Headers:
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:08:41:16] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 42, in __call__
+    raise x
+TypeError: 'module' object is not callable
+
+[21/Jan/2014:08:41:16] HTTP 
+Request Headers:
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:09:33:15] ENGINE Restarting because /Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown.py changed.
+[21/Jan/2014:09:33:15] ENGINE Stopped thread 'Autoreloader'.
+[21/Jan/2014:09:33:15] ENGINE Bus STOPPING
+[21/Jan/2014:09:33:15] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jan/2014:09:33:15] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Jan/2014:09:33:15] ENGINE Bus STOPPED
+[21/Jan/2014:09:33:15] ENGINE Bus EXITING
+[21/Jan/2014:09:33:15] ENGINE Bus EXITED
+[21/Jan/2014:09:33:15] ENGINE Waiting for child threads to terminate...
+[21/Jan/2014:09:33:15] ENGINE Re-spawning shutthatdown.py
+[21/Jan/2014:09:33:16] ENGINE Listening for SIGHUP.
+[21/Jan/2014:09:33:16] ENGINE Listening for SIGTERM.
+[21/Jan/2014:09:33:16] ENGINE Listening for SIGUSR1.
+[21/Jan/2014:09:33:16] ENGINE Bus STARTING
+[21/Jan/2014:09:33:16] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jan/2014:09:33:16] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Jan/2014:09:33:16] ENGINE Serving on 127.0.0.1:8080
+[21/Jan/2014:09:33:16] ENGINE Bus STARTED
+[21/Jan/2014:09:33:21] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 42, in __call__
+    raise x
+TypeError: 'module' object is not callable
+
+[21/Jan/2014:09:33:21] HTTP 
+Request Headers:
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:09:33:33] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 42, in __call__
+    raise x
+TypeError: 'module' object is not callable
+
+[21/Jan/2014:09:33:33] HTTP 
+Request Headers:
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:09:38:42] ENGINE Restarting because /Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown.py changed.
+[21/Jan/2014:09:38:42] ENGINE Stopped thread 'Autoreloader'.
+[21/Jan/2014:09:38:42] ENGINE Bus STOPPING
+[21/Jan/2014:09:38:42] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jan/2014:09:38:42] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Jan/2014:09:38:42] ENGINE Bus STOPPED
+[21/Jan/2014:09:38:42] ENGINE Bus EXITING
+[21/Jan/2014:09:38:42] ENGINE Bus EXITED
+[21/Jan/2014:09:38:42] ENGINE Waiting for child threads to terminate...
+[21/Jan/2014:09:38:42] ENGINE Re-spawning shutthatdown.py
+[21/Jan/2014:10:00:37] ENGINE Listening for SIGHUP.
+[21/Jan/2014:10:00:37] ENGINE Listening for SIGTERM.
+[21/Jan/2014:10:00:37] ENGINE Listening for SIGUSR1.
+[21/Jan/2014:10:00:37] ENGINE Bus STARTING
+[21/Jan/2014:10:00:37] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Jan/2014:10:00:37] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jan/2014:10:00:37] ENGINE Serving on 127.0.0.1:8080
+[21/Jan/2014:10:00:37] ENGINE Bus STARTED
+[21/Jan/2014:10:00:42] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_/shutthatdown_index.py", line 12, in index
+    database_connection = psycopg2.connect(shutthatdown_credentials.database_connection_details)
+  File "/Library/Python/2.7/site-packages/psycopg2/__init__.py", line 164, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, async=async)
+OperationalError: could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+
+
+[21/Jan/2014:10:00:42] HTTP 
+Request Headers:
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:10:00:47] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_/shutthatdown_browse_quotes.py", line 14, in browse_quotes
+    database_connection = psycopg2.connect(shutthatdown_credentials.database_connection_details)
+  File "/Library/Python/2.7/site-packages/psycopg2/__init__.py", line 164, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, async=async)
+OperationalError: could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+
+
+[21/Jan/2014:10:00:47] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:8080/
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:10:00:49] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_/shutthatdown_about.py", line 37, in about
+    return wrap_in_css(page_source, 'About Shut That Down')
+NameError: global name 'wrap_in_css' is not defined
+
+[21/Jan/2014:10:00:49] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:8080/browse_quotes
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:10:00:54] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_/shutthatdown_special_thanks.py", line 8, in special_thanks
+    database_connection = psycopg2.connect(self.database_connection_details)
+NameError: global name 'psycopg2' is not defined
+
+[21/Jan/2014:10:00:54] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:8080/about
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:10:01:11] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_/shutthatdown_special_thanks.py", line 8, in special_thanks
+    database_connection = psycopg2.connect(self.database_connection_details)
+NameError: global name 'psycopg2' is not defined
+
+[21/Jan/2014:10:01:11] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:8080/about
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:10:01:14] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_/shutthatdown_about.py", line 37, in about
+    return wrap_in_css(page_source, 'About Shut That Down')
+NameError: global name 'wrap_in_css' is not defined
+
+[21/Jan/2014:10:01:14] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:8080/special_thanks
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:10:02:49] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_/shutthatdown_about.py", line 37, in about
+    return wrap_in_css(page_source, 'About Shut That Down')
+NameError: global name 'wrap_in_css' is not defined
+
+[21/Jan/2014:10:02:49] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:8080/special_thanks
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:10:02:59] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_/shutthatdown_about.py", line 37, in about
+    return wrap_in_css(page_source, 'About Shut That Down')
+NameError: global name 'wrap_in_css' is not defined
+
+[21/Jan/2014:10:02:59] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:8080/special_thanks
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:10:03:13] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_/shutthatdown_about.py", line 37, in about
+    return wrap_in_css(page_source, 'About Shut That Down')
+NameError: global name 'wrap_in_css' is not defined
+
+[21/Jan/2014:10:03:13] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:8080/special_thanks
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:10:03:37] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_/shutthatdown_about.py", line 37, in about
+    return wrap_in_css(page_source, 'About Shut That Down')
+NameError: global name 'wrap_in_css' is not defined
+
+[21/Jan/2014:10:03:37] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:8080/special_thanks
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:10:03:46] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_/shutthatdown_about.py", line 37, in about
+    return wrap_in_css(page_source, 'About Shut That Down')
+NameError: global name 'wrap_in_css' is not defined
+
+[21/Jan/2014:10:03:46] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:8080/about
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:10:04:14] ENGINE Restarting because /Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_/shutthatdown_about.py changed.
+[21/Jan/2014:10:04:14] ENGINE Stopped thread 'Autoreloader'.
+[21/Jan/2014:10:04:14] ENGINE Bus STOPPING
+[21/Jan/2014:10:04:14] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jan/2014:10:04:14] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Jan/2014:10:04:14] ENGINE Bus STOPPED
+[21/Jan/2014:10:04:14] ENGINE Bus EXITING
+[21/Jan/2014:10:04:14] ENGINE Bus EXITED
+[21/Jan/2014:10:04:14] ENGINE Waiting for child threads to terminate...
+[21/Jan/2014:10:04:14] ENGINE Re-spawning shutthatdown.py
+[21/Jan/2014:10:04:14] ENGINE Listening for SIGHUP.
+[21/Jan/2014:10:04:14] ENGINE Listening for SIGTERM.
+[21/Jan/2014:10:04:14] ENGINE Listening for SIGUSR1.
+[21/Jan/2014:10:04:14] ENGINE Bus STARTING
+[21/Jan/2014:10:04:14] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Jan/2014:10:04:14] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jan/2014:10:04:14] ENGINE Serving on 127.0.0.1:8080
+[21/Jan/2014:10:04:14] ENGINE Bus STARTED
+[21/Jan/2014:10:04:16] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_/shutthatdown_about.py", line 38, in about
+    return wrap_in_css(page_source, 'About Shut That Down')
+TypeError: 'module' object is not callable
+
+[21/Jan/2014:10:04:16] HTTP 
+Request Headers:
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:10:04:17] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_/shutthatdown_about.py", line 38, in about
+    return wrap_in_css(page_source, 'About Shut That Down')
+TypeError: 'module' object is not callable
+
+[21/Jan/2014:10:04:17] HTTP 
+Request Headers:
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:10:05:00] ENGINE Keyboard Interrupt: shutting down bus
+[21/Jan/2014:10:05:00] ENGINE Bus STOPPING
+[21/Jan/2014:10:05:00] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jan/2014:10:05:00] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Jan/2014:10:05:00] ENGINE Stopped thread 'Autoreloader'.
+[21/Jan/2014:10:05:00] ENGINE Bus STOPPED
+[21/Jan/2014:10:05:00] ENGINE Bus EXITING
+[21/Jan/2014:10:05:00] ENGINE Bus EXITED
+[21/Jan/2014:10:05:00] ENGINE Waiting for child threads to terminate...
+[21/Jan/2014:10:05:07] ENGINE Listening for SIGHUP.
+[21/Jan/2014:10:05:07] ENGINE Listening for SIGTERM.
+[21/Jan/2014:10:05:07] ENGINE Listening for SIGUSR1.
+[21/Jan/2014:10:05:07] ENGINE Bus STARTING
+[21/Jan/2014:10:05:07] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Jan/2014:10:05:07] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jan/2014:10:05:07] ENGINE Serving on 127.0.0.1:8080
+[21/Jan/2014:10:05:07] ENGINE Bus STARTED
+[21/Jan/2014:10:05:14] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_/shutthatdown_about.py", line 38, in about
+    return wrap_in_css(page_source, 'About Shut That Down')
+TypeError: 'module' object is not callable
+
+[21/Jan/2014:10:05:14] HTTP 
+Request Headers:
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:10:05:23] ENGINE Keyboard Interrupt: shutting down bus
+[21/Jan/2014:10:05:23] ENGINE Bus STOPPING
+[21/Jan/2014:10:05:24] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jan/2014:10:05:24] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Jan/2014:10:05:24] ENGINE Stopped thread 'Autoreloader'.
+[21/Jan/2014:10:05:24] ENGINE Bus STOPPED
+[21/Jan/2014:10:05:24] ENGINE Bus EXITING
+[21/Jan/2014:10:05:24] ENGINE Bus EXITED
+[21/Jan/2014:10:05:24] ENGINE Waiting for child threads to terminate...
+[21/Jan/2014:10:07:36] ENGINE Listening for SIGHUP.
+[21/Jan/2014:10:07:36] ENGINE Listening for SIGTERM.
+[21/Jan/2014:10:07:36] ENGINE Listening for SIGUSR1.
+[21/Jan/2014:10:07:36] ENGINE Bus STARTING
+[21/Jan/2014:10:07:36] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Jan/2014:10:07:36] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jan/2014:10:07:37] ENGINE Serving on 127.0.0.1:8080
+[21/Jan/2014:10:07:37] ENGINE Bus STARTED
+[21/Jan/2014:10:07:46] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_/shutthatdown_special_thanks.py", line 8, in special_thanks
+    database_connection = psycopg2.connect(self.database_connection_details)
+NameError: global name 'psycopg2' is not defined
+
+[21/Jan/2014:10:07:46] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:8080/about
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:10:07:50] ENGINE Keyboard Interrupt: shutting down bus
+[21/Jan/2014:10:07:50] ENGINE Bus STOPPING
+[21/Jan/2014:10:07:53] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jan/2014:10:07:53] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Jan/2014:10:07:53] ENGINE Stopped thread 'Autoreloader'.
+[21/Jan/2014:10:07:53] ENGINE Bus STOPPED
+[21/Jan/2014:10:07:53] ENGINE Bus EXITING
+[21/Jan/2014:10:07:53] ENGINE Bus EXITED
+[21/Jan/2014:10:07:53] ENGINE Waiting for child threads to terminate...
+[21/Jan/2014:10:07:53] ENGINE Waiting for thread CP Server Thread-7.
+[21/Jan/2014:10:13:54] ENGINE Listening for SIGHUP.
+[21/Jan/2014:10:13:54] ENGINE Listening for SIGTERM.
+[21/Jan/2014:10:13:54] ENGINE Listening for SIGUSR1.
+[21/Jan/2014:10:13:54] ENGINE Bus STARTING
+[21/Jan/2014:10:13:54] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Jan/2014:10:13:54] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jan/2014:10:13:54] ENGINE Serving on 127.0.0.1:8080
+[21/Jan/2014:10:13:54] ENGINE Bus STARTED
+[21/Jan/2014:10:13:58] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_/shutthatdown_about.py", line 11, in about
+    with open('static/about.html') as static_about:
+IOError: [Errno 2] No such file or directory: 'static/about.html'
+
+[21/Jan/2014:10:13:58] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:8080/special_thanks
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:10:18:23] ENGINE Restarting because /Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_/shutthatdown_index.py changed.
+[21/Jan/2014:10:18:23] ENGINE Stopped thread 'Autoreloader'.
+[21/Jan/2014:10:18:23] ENGINE Bus STOPPING
+[21/Jan/2014:10:18:23] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jan/2014:10:18:23] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Jan/2014:10:18:23] ENGINE Bus STOPPED
+[21/Jan/2014:10:18:23] ENGINE Bus EXITING
+[21/Jan/2014:10:18:23] ENGINE Bus EXITED
+[21/Jan/2014:10:18:23] ENGINE Waiting for child threads to terminate...
+[21/Jan/2014:10:18:23] ENGINE Re-spawning shutthatdown.py
+[21/Jan/2014:10:18:23] ENGINE Listening for SIGHUP.
+[21/Jan/2014:10:18:23] ENGINE Listening for SIGTERM.
+[21/Jan/2014:10:18:23] ENGINE Listening for SIGUSR1.
+[21/Jan/2014:10:18:23] ENGINE Bus STARTING
+[21/Jan/2014:10:18:23] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Jan/2014:10:18:23] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jan/2014:10:18:23] ENGINE Serving on 127.0.0.1:8080
+[21/Jan/2014:10:18:23] ENGINE Bus STARTED
+[21/Jan/2014:10:22:07] ENGINE Restarting because /Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_/shutthatdown_index.py changed.
+[21/Jan/2014:10:22:07] ENGINE Stopped thread 'Autoreloader'.
+[21/Jan/2014:10:22:07] ENGINE Bus STOPPING
+[21/Jan/2014:10:22:07] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jan/2014:10:22:07] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Jan/2014:10:22:07] ENGINE Bus STOPPED
+[21/Jan/2014:10:22:07] ENGINE Bus EXITING
+[21/Jan/2014:10:22:07] ENGINE Bus EXITED
+[21/Jan/2014:10:22:07] ENGINE Waiting for child threads to terminate...
+[21/Jan/2014:10:22:07] ENGINE Re-spawning shutthatdown.py
+[21/Jan/2014:10:22:07] ENGINE Listening for SIGHUP.
+[21/Jan/2014:10:22:07] ENGINE Listening for SIGTERM.
+[21/Jan/2014:10:22:07] ENGINE Listening for SIGUSR1.
+[21/Jan/2014:10:22:07] ENGINE Bus STARTING
+[21/Jan/2014:10:22:07] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Jan/2014:10:22:07] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jan/2014:10:22:07] ENGINE Serving on 127.0.0.1:8080
+[21/Jan/2014:10:22:07] ENGINE Bus STARTED
+[21/Jan/2014:10:27:16] ENGINE Restarting because /Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_/shutthatdown_index.py changed.
+[21/Jan/2014:10:27:16] ENGINE Stopped thread 'Autoreloader'.
+[21/Jan/2014:10:27:16] ENGINE Bus STOPPING
+[21/Jan/2014:10:27:16] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jan/2014:10:27:16] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Jan/2014:10:27:16] ENGINE Bus STOPPED
+[21/Jan/2014:10:27:16] ENGINE Bus EXITING
+[21/Jan/2014:10:27:16] ENGINE Bus EXITED
+[21/Jan/2014:10:27:16] ENGINE Waiting for child threads to terminate...
+[21/Jan/2014:10:27:16] ENGINE Re-spawning shutthatdown.py
+[21/Jan/2014:10:27:17] ENGINE Listening for SIGHUP.
+[21/Jan/2014:10:27:17] ENGINE Listening for SIGTERM.
+[21/Jan/2014:10:27:17] ENGINE Listening for SIGUSR1.
+[21/Jan/2014:10:27:17] ENGINE Bus STARTING
+[21/Jan/2014:10:27:17] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Jan/2014:10:27:17] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jan/2014:10:27:17] ENGINE Serving on 127.0.0.1:8080
+[21/Jan/2014:10:27:17] ENGINE Bus STARTED
+[21/Jan/2014:10:29:40] ENGINE Restarting because /Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown.py changed.
+[21/Jan/2014:10:29:40] ENGINE Stopped thread 'Autoreloader'.
+[21/Jan/2014:10:29:40] ENGINE Bus STOPPING
+[21/Jan/2014:10:29:40] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jan/2014:10:29:40] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Jan/2014:10:29:40] ENGINE Bus STOPPED
+[21/Jan/2014:10:29:40] ENGINE Bus EXITING
+[21/Jan/2014:10:29:40] ENGINE Bus EXITED
+[21/Jan/2014:10:29:40] ENGINE Waiting for child threads to terminate...
+[21/Jan/2014:10:29:40] ENGINE Re-spawning shutthatdown.py
+[21/Jan/2014:10:29:41] ENGINE Listening for SIGHUP.
+[21/Jan/2014:10:29:41] ENGINE Listening for SIGTERM.
+[21/Jan/2014:10:29:41] ENGINE Listening for SIGUSR1.
+[21/Jan/2014:10:29:41] ENGINE Bus STARTING
+[21/Jan/2014:10:29:41] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Jan/2014:10:29:41] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jan/2014:10:29:41] ENGINE Serving on 127.0.0.1:8080
+[21/Jan/2014:10:29:41] ENGINE Bus STARTED
+[21/Jan/2014:10:30:29] ENGINE Restarting because /Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_/shutthatdown_browse_persons.py changed.
+[21/Jan/2014:10:30:29] ENGINE Stopped thread 'Autoreloader'.
+[21/Jan/2014:10:30:29] ENGINE Bus STOPPING
+[21/Jan/2014:10:30:29] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jan/2014:10:30:29] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Jan/2014:10:30:29] ENGINE Bus STOPPED
+[21/Jan/2014:10:30:29] ENGINE Bus EXITING
+[21/Jan/2014:10:30:29] ENGINE Bus EXITED
+[21/Jan/2014:10:30:29] ENGINE Waiting for child threads to terminate...
+[21/Jan/2014:10:30:29] ENGINE Re-spawning shutthatdown.py
+[21/Jan/2014:10:30:29] ENGINE Listening for SIGHUP.
+[21/Jan/2014:10:30:29] ENGINE Listening for SIGTERM.
+[21/Jan/2014:10:30:29] ENGINE Listening for SIGUSR1.
+[21/Jan/2014:10:30:29] ENGINE Bus STARTING
+[21/Jan/2014:10:30:29] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Jan/2014:10:30:29] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jan/2014:10:30:29] ENGINE Serving on 127.0.0.1:8080
+[21/Jan/2014:10:30:29] ENGINE Bus STARTED
+[21/Jan/2014:10:31:51] ENGINE Restarting because /Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_/shutthatdown_browse_quotes.py changed.
+[21/Jan/2014:10:31:51] ENGINE Stopped thread 'Autoreloader'.
+[21/Jan/2014:10:31:51] ENGINE Bus STOPPING
+[21/Jan/2014:10:31:51] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jan/2014:10:31:51] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Jan/2014:10:31:51] ENGINE Bus STOPPED
+[21/Jan/2014:10:31:51] ENGINE Bus EXITING
+[21/Jan/2014:10:31:51] ENGINE Bus EXITED
+[21/Jan/2014:10:31:51] ENGINE Waiting for child threads to terminate...
+[21/Jan/2014:10:31:51] ENGINE Re-spawning shutthatdown.py
+[21/Jan/2014:10:31:52] ENGINE Listening for SIGHUP.
+[21/Jan/2014:10:31:52] ENGINE Listening for SIGTERM.
+[21/Jan/2014:10:31:52] ENGINE Listening for SIGUSR1.
+[21/Jan/2014:10:31:52] ENGINE Bus STARTING
+[21/Jan/2014:10:31:52] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Jan/2014:10:31:52] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jan/2014:10:31:52] ENGINE Serving on 127.0.0.1:8080
+[21/Jan/2014:10:31:52] ENGINE Bus STARTED
+[21/Jan/2014:10:34:39] ENGINE Restarting because /Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_/shutthatdown_enablers.py changed.
+[21/Jan/2014:10:34:39] ENGINE Stopped thread 'Autoreloader'.
+[21/Jan/2014:10:34:39] ENGINE Bus STOPPING
+[21/Jan/2014:10:34:39] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jan/2014:10:34:39] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Jan/2014:10:34:39] ENGINE Bus STOPPED
+[21/Jan/2014:10:34:39] ENGINE Bus EXITING
+[21/Jan/2014:10:34:39] ENGINE Bus EXITED
+[21/Jan/2014:10:34:39] ENGINE Waiting for child threads to terminate...
+[21/Jan/2014:10:34:39] ENGINE Re-spawning shutthatdown.py
+[21/Jan/2014:10:34:39] ENGINE Listening for SIGHUP.
+[21/Jan/2014:10:34:39] ENGINE Listening for SIGTERM.
+[21/Jan/2014:10:34:39] ENGINE Listening for SIGUSR1.
+[21/Jan/2014:10:34:39] ENGINE Bus STARTING
+[21/Jan/2014:10:34:39] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Jan/2014:10:34:39] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jan/2014:10:34:40] ENGINE Serving on 127.0.0.1:8080
+[21/Jan/2014:10:34:40] ENGINE Bus STARTED
+[21/Jan/2014:10:43:45] ENGINE Restarting because /Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_/shutthatdown_inmystate.py changed.
+[21/Jan/2014:10:43:45] ENGINE Stopped thread 'Autoreloader'.
+[21/Jan/2014:10:43:45] ENGINE Bus STOPPING
+[21/Jan/2014:10:43:45] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jan/2014:10:43:45] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Jan/2014:10:43:45] ENGINE Bus STOPPED
+[21/Jan/2014:10:43:45] ENGINE Bus EXITING
+[21/Jan/2014:10:43:45] ENGINE Bus EXITED
+[21/Jan/2014:10:43:45] ENGINE Waiting for child threads to terminate...
+[21/Jan/2014:10:43:45] ENGINE Re-spawning shutthatdown.py
+[21/Jan/2014:10:43:45] ENGINE Listening for SIGHUP.
+[21/Jan/2014:10:43:45] ENGINE Listening for SIGTERM.
+[21/Jan/2014:10:43:45] ENGINE Listening for SIGUSR1.
+[21/Jan/2014:10:43:45] ENGINE Bus STARTING
+[21/Jan/2014:10:43:45] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Jan/2014:10:43:45] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jan/2014:10:43:45] ENGINE Serving on 127.0.0.1:8080
+[21/Jan/2014:10:43:45] ENGINE Bus STARTED
+[21/Jan/2014:10:44:50] ENGINE Restarting because /Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_/shutthatdown_inmystate.py changed.
+[21/Jan/2014:10:44:50] ENGINE Stopped thread 'Autoreloader'.
+[21/Jan/2014:10:44:50] ENGINE Bus STOPPING
+[21/Jan/2014:10:44:50] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jan/2014:10:44:50] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Jan/2014:10:44:50] ENGINE Bus STOPPED
+[21/Jan/2014:10:44:50] ENGINE Bus EXITING
+[21/Jan/2014:10:44:50] ENGINE Bus EXITED
+[21/Jan/2014:10:44:50] ENGINE Waiting for child threads to terminate...
+[21/Jan/2014:10:44:50] ENGINE Re-spawning shutthatdown.py
+[21/Jan/2014:10:44:50] ENGINE Listening for SIGHUP.
+[21/Jan/2014:10:44:50] ENGINE Listening for SIGTERM.
+[21/Jan/2014:10:44:50] ENGINE Listening for SIGUSR1.
+[21/Jan/2014:10:44:50] ENGINE Bus STARTING
+[21/Jan/2014:10:44:50] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Jan/2014:10:44:50] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jan/2014:10:44:50] ENGINE Serving on 127.0.0.1:8080
+[21/Jan/2014:10:44:50] ENGINE Bus STARTED
+[21/Jan/2014:10:46:18] ENGINE Restarting because /Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_/shutthatdown_quote.py changed.
+[21/Jan/2014:10:46:18] ENGINE Stopped thread 'Autoreloader'.
+[21/Jan/2014:10:46:18] ENGINE Bus STOPPING
+[21/Jan/2014:10:46:18] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jan/2014:10:46:18] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Jan/2014:10:46:18] ENGINE Bus STOPPED
+[21/Jan/2014:10:46:18] ENGINE Bus EXITING
+[21/Jan/2014:10:46:18] ENGINE Bus EXITED
+[21/Jan/2014:10:46:18] ENGINE Waiting for child threads to terminate...
+[21/Jan/2014:10:46:18] ENGINE Re-spawning shutthatdown.py
+[21/Jan/2014:10:46:18] ENGINE Listening for SIGHUP.
+[21/Jan/2014:10:46:18] ENGINE Listening for SIGTERM.
+[21/Jan/2014:10:46:18] ENGINE Listening for SIGUSR1.
+[21/Jan/2014:10:46:18] ENGINE Bus STARTING
+[21/Jan/2014:10:46:18] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Jan/2014:10:46:18] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jan/2014:10:46:18] ENGINE Serving on 127.0.0.1:8080
+[21/Jan/2014:10:46:18] ENGINE Bus STARTED
+[21/Jan/2014:10:52:13] ENGINE Restarting because /Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_/shutthatdown_random_quote.py changed.
+[21/Jan/2014:10:52:13] ENGINE Stopped thread 'Autoreloader'.
+[21/Jan/2014:10:52:13] ENGINE Bus STOPPING
+[21/Jan/2014:10:52:13] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jan/2014:10:52:13] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Jan/2014:10:52:13] ENGINE Bus STOPPED
+[21/Jan/2014:10:52:13] ENGINE Bus EXITING
+[21/Jan/2014:10:52:13] ENGINE Bus EXITED
+[21/Jan/2014:10:52:13] ENGINE Waiting for child threads to terminate...
+[21/Jan/2014:10:52:13] ENGINE Re-spawning shutthatdown.py
+[21/Jan/2014:10:52:13] ENGINE Listening for SIGHUP.
+[21/Jan/2014:10:52:13] ENGINE Listening for SIGTERM.
+[21/Jan/2014:10:52:13] ENGINE Listening for SIGUSR1.
+[21/Jan/2014:10:52:13] ENGINE Bus STARTING
+[21/Jan/2014:10:52:13] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Jan/2014:10:52:13] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jan/2014:10:52:13] ENGINE Serving on 127.0.0.1:8080
+[21/Jan/2014:10:52:13] ENGINE Bus STARTED
+[21/Jan/2014:10:53:33] ENGINE Restarting because /Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_/shutthatdown_search.py changed.
+[21/Jan/2014:10:53:33] ENGINE Stopped thread 'Autoreloader'.
+[21/Jan/2014:10:53:33] ENGINE Bus STOPPING
+[21/Jan/2014:10:53:33] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jan/2014:10:53:33] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Jan/2014:10:53:33] ENGINE Bus STOPPED
+[21/Jan/2014:10:53:33] ENGINE Bus EXITING
+[21/Jan/2014:10:53:33] ENGINE Bus EXITED
+[21/Jan/2014:10:53:34] ENGINE Waiting for child threads to terminate...
+[21/Jan/2014:10:53:34] ENGINE Re-spawning shutthatdown.py
+[21/Jan/2014:10:53:34] ENGINE Listening for SIGHUP.
+[21/Jan/2014:10:53:34] ENGINE Listening for SIGTERM.
+[21/Jan/2014:10:53:34] ENGINE Listening for SIGUSR1.
+[21/Jan/2014:10:53:34] ENGINE Bus STARTING
+[21/Jan/2014:10:53:34] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Jan/2014:10:53:34] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jan/2014:10:53:34] ENGINE Serving on 127.0.0.1:8080
+[21/Jan/2014:10:53:34] ENGINE Bus STARTED
+[21/Jan/2014:10:54:04] ENGINE Restarting because /Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_/shutthatdown_special_thanks.py changed.
+[21/Jan/2014:10:54:04] ENGINE Stopped thread 'Autoreloader'.
+[21/Jan/2014:10:54:04] ENGINE Bus STOPPING
+[21/Jan/2014:10:54:04] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jan/2014:10:54:04] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Jan/2014:10:54:04] ENGINE Bus STOPPED
+[21/Jan/2014:10:54:04] ENGINE Bus EXITING
+[21/Jan/2014:10:54:04] ENGINE Bus EXITED
+[21/Jan/2014:10:54:04] ENGINE Waiting for child threads to terminate...
+[21/Jan/2014:10:54:04] ENGINE Re-spawning shutthatdown.py
+[21/Jan/2014:10:54:04] ENGINE Listening for SIGHUP.
+[21/Jan/2014:10:54:04] ENGINE Listening for SIGTERM.
+[21/Jan/2014:10:54:04] ENGINE Listening for SIGUSR1.
+[21/Jan/2014:10:54:04] ENGINE Bus STARTING
+[21/Jan/2014:10:54:04] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Jan/2014:10:54:04] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jan/2014:10:54:04] ENGINE Serving on 127.0.0.1:8080
+[21/Jan/2014:10:54:04] ENGINE Bus STARTED
+[21/Jan/2014:10:54:27] ENGINE Restarting because /Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_/shutthatdown_stats.py changed.
+[21/Jan/2014:10:54:27] ENGINE Stopped thread 'Autoreloader'.
+[21/Jan/2014:10:54:27] ENGINE Bus STOPPING
+[21/Jan/2014:10:54:27] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jan/2014:10:54:27] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Jan/2014:10:54:27] ENGINE Bus STOPPED
+[21/Jan/2014:10:54:27] ENGINE Bus EXITING
+[21/Jan/2014:10:54:27] ENGINE Bus EXITED
+[21/Jan/2014:10:54:27] ENGINE Waiting for child threads to terminate...
+[21/Jan/2014:10:54:27] ENGINE Re-spawning shutthatdown.py
+[21/Jan/2014:10:54:27] ENGINE Listening for SIGHUP.
+[21/Jan/2014:10:54:27] ENGINE Listening for SIGTERM.
+[21/Jan/2014:10:54:27] ENGINE Listening for SIGUSR1.
+[21/Jan/2014:10:54:27] ENGINE Bus STARTING
+[21/Jan/2014:10:54:27] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Jan/2014:10:54:27] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jan/2014:10:54:27] ENGINE Serving on 127.0.0.1:8080
+[21/Jan/2014:10:54:27] ENGINE Bus STARTED
+[21/Jan/2014:10:54:45] ENGINE Restarting because /Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_/shutthatdown_stats.py changed.
+[21/Jan/2014:10:54:45] ENGINE Stopped thread 'Autoreloader'.
+[21/Jan/2014:10:54:45] ENGINE Bus STOPPING
+[21/Jan/2014:10:54:45] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jan/2014:10:54:45] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Jan/2014:10:54:45] ENGINE Bus STOPPED
+[21/Jan/2014:10:54:45] ENGINE Bus EXITING
+[21/Jan/2014:10:54:45] ENGINE Bus EXITED
+[21/Jan/2014:10:54:45] ENGINE Waiting for child threads to terminate...
+[21/Jan/2014:10:54:45] ENGINE Re-spawning shutthatdown.py
+[21/Jan/2014:10:54:46] ENGINE Listening for SIGHUP.
+[21/Jan/2014:10:54:46] ENGINE Listening for SIGTERM.
+[21/Jan/2014:10:54:46] ENGINE Listening for SIGUSR1.
+[21/Jan/2014:10:54:46] ENGINE Bus STARTING
+[21/Jan/2014:10:54:46] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Jan/2014:10:54:46] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jan/2014:10:54:46] ENGINE Serving on 127.0.0.1:8080
+[21/Jan/2014:10:54:46] ENGINE Bus STARTED
+[21/Jan/2014:10:56:09] ENGINE Restarting because /Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_/shutthatdown_welove.py changed.
+[21/Jan/2014:10:56:09] ENGINE Stopped thread 'Autoreloader'.
+[21/Jan/2014:10:56:09] ENGINE Bus STOPPING
+[21/Jan/2014:10:56:09] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jan/2014:10:56:09] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Jan/2014:10:56:09] ENGINE Bus STOPPED
+[21/Jan/2014:10:56:09] ENGINE Bus EXITING
+[21/Jan/2014:10:56:09] ENGINE Bus EXITED
+[21/Jan/2014:10:56:09] ENGINE Waiting for child threads to terminate...
+[21/Jan/2014:10:56:09] ENGINE Re-spawning shutthatdown.py
+[21/Jan/2014:10:56:09] ENGINE Listening for SIGHUP.
+[21/Jan/2014:10:56:09] ENGINE Listening for SIGTERM.
+[21/Jan/2014:10:56:09] ENGINE Listening for SIGUSR1.
+[21/Jan/2014:10:56:09] ENGINE Bus STARTING
+[21/Jan/2014:10:56:09] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Jan/2014:10:56:09] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jan/2014:10:56:09] ENGINE Serving on 127.0.0.1:8080
+[21/Jan/2014:10:56:09] ENGINE Bus STARTED
+[21/Jan/2014:11:01:43] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_/shutthatdown_index.py", line 12, in index
+    database_connection = psycopg2.connect(shutthatdown_credentials.database_connection_details)
+  File "/Library/Python/2.7/site-packages/psycopg2/__init__.py", line 164, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, async=async)
+OperationalError: could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+
+
+[21/Jan/2014:11:01:43] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:8080/about
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:11:01:48] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_/shutthatdown_special_thanks.py", line 11, in special_thanks
+    database_connection = psycopg2.connect(self.database_connection_details)
+AttributeError: 'Root' object has no attribute 'database_connection_details'
+
+[21/Jan/2014:11:01:48] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:8080/about
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:11:01:50] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_/shutthatdown_welove.py", line 22, in welove
+    return wrap_in_css(page_source, "Shut That Down Loves ...")
+NameError: global name 'wrap_in_css' is not defined
+
+[21/Jan/2014:11:01:50] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:8080/special_thanks
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:11:02:41] ENGINE Restarting because /Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_/shutthatdown_welove.py changed.
+[21/Jan/2014:11:02:41] ENGINE Stopped thread 'Autoreloader'.
+[21/Jan/2014:11:02:41] ENGINE Bus STOPPING
+[21/Jan/2014:11:02:41] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jan/2014:11:02:41] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Jan/2014:11:02:41] ENGINE Bus STOPPED
+[21/Jan/2014:11:02:41] ENGINE Bus EXITING
+[21/Jan/2014:11:02:41] ENGINE Bus EXITED
+[21/Jan/2014:11:02:41] ENGINE Waiting for child threads to terminate...
+[21/Jan/2014:11:02:41] ENGINE Re-spawning shutthatdown.py
+[21/Jan/2014:11:02:41] ENGINE Listening for SIGHUP.
+[21/Jan/2014:11:02:41] ENGINE Listening for SIGTERM.
+[21/Jan/2014:11:02:41] ENGINE Listening for SIGUSR1.
+[21/Jan/2014:11:02:41] ENGINE Bus STARTING
+[21/Jan/2014:11:02:41] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Jan/2014:11:02:41] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jan/2014:11:02:41] ENGINE Serving on 127.0.0.1:8080
+[21/Jan/2014:11:02:41] ENGINE Bus STARTED
+[21/Jan/2014:11:04:08] ENGINE Restarting because /Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_/shutthatdown_special_thanks.py changed.
+[21/Jan/2014:11:04:08] ENGINE Stopped thread 'Autoreloader'.
+[21/Jan/2014:11:04:08] ENGINE Bus STOPPING
+[21/Jan/2014:11:04:08] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jan/2014:11:04:08] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Jan/2014:11:04:08] ENGINE Bus STOPPED
+[21/Jan/2014:11:04:08] ENGINE Bus EXITING
+[21/Jan/2014:11:04:08] ENGINE Bus EXITED
+[21/Jan/2014:11:04:08] ENGINE Waiting for child threads to terminate...
+[21/Jan/2014:11:04:08] ENGINE Re-spawning shutthatdown.py
+[21/Jan/2014:11:04:08] ENGINE Listening for SIGHUP.
+[21/Jan/2014:11:04:08] ENGINE Listening for SIGTERM.
+[21/Jan/2014:11:04:08] ENGINE Listening for SIGUSR1.
+[21/Jan/2014:11:04:08] ENGINE Bus STARTING
+[21/Jan/2014:11:04:08] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Jan/2014:11:04:08] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jan/2014:11:04:08] ENGINE Serving on 127.0.0.1:8080
+[21/Jan/2014:11:04:08] ENGINE Bus STARTED
+[21/Jan/2014:11:20:36] ENGINE Restarting because /Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_/shutthatdown_search.py changed.
+[21/Jan/2014:11:20:36] ENGINE Stopped thread 'Autoreloader'.
+[21/Jan/2014:11:20:36] ENGINE Bus STOPPING
+[21/Jan/2014:11:20:36] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jan/2014:11:20:36] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Jan/2014:11:20:36] ENGINE Bus STOPPED
+[21/Jan/2014:11:20:36] ENGINE Bus EXITING
+[21/Jan/2014:11:20:36] ENGINE Bus EXITED
+[21/Jan/2014:11:20:37] ENGINE Waiting for child threads to terminate...
+[21/Jan/2014:11:20:37] ENGINE Re-spawning shutthatdown.py
+[21/Jan/2014:11:20:37] ENGINE Listening for SIGHUP.
+[21/Jan/2014:11:20:37] ENGINE Listening for SIGTERM.
+[21/Jan/2014:11:20:37] ENGINE Listening for SIGUSR1.
+[21/Jan/2014:11:20:37] ENGINE Bus STARTING
+[21/Jan/2014:11:20:37] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Jan/2014:11:20:37] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jan/2014:11:20:37] ENGINE Serving on 127.0.0.1:8080
+[21/Jan/2014:11:20:37] ENGINE Bus STARTED
+[21/Jan/2014:11:20:49] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_/shutthatdown_search.py", line 66, in search
+    return self.index()
+  File "/Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_/shutthatdown_index.py", line 12, in index
+    database_connection = psycopg2.connect(shutthatdown_credentials.database_connection_details)
+  File "/Library/Python/2.7/site-packages/psycopg2/__init__.py", line 164, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, async=async)
+OperationalError: could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+
+
+[21/Jan/2014:11:20:49] HTTP 
+Request Headers:
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:11:21:06] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_/shutthatdown_index.py", line 12, in index
+    database_connection = psycopg2.connect(shutthatdown_credentials.database_connection_details)
+  File "/Library/Python/2.7/site-packages/psycopg2/__init__.py", line 164, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, async=async)
+OperationalError: could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+
+
+[21/Jan/2014:11:21:06] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:8080/search
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:11:21:27] ENGINE Restarting because /Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_/shutthatdown_search.py changed.
+[21/Jan/2014:11:21:27] ENGINE Stopped thread 'Autoreloader'.
+[21/Jan/2014:11:21:27] ENGINE Bus STOPPING
+[21/Jan/2014:11:21:27] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jan/2014:11:21:27] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Jan/2014:11:21:27] ENGINE Bus STOPPED
+[21/Jan/2014:11:21:27] ENGINE Bus EXITING
+[21/Jan/2014:11:21:27] ENGINE Bus EXITED
+[21/Jan/2014:11:21:27] ENGINE Waiting for child threads to terminate...
+[21/Jan/2014:11:21:27] ENGINE Re-spawning shutthatdown.py
+[21/Jan/2014:11:21:27] ENGINE Listening for SIGHUP.
+[21/Jan/2014:11:21:27] ENGINE Listening for SIGTERM.
+[21/Jan/2014:11:21:27] ENGINE Listening for SIGUSR1.
+[21/Jan/2014:11:21:27] ENGINE Bus STARTING
+[21/Jan/2014:11:21:27] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Jan/2014:11:21:27] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jan/2014:11:21:27] ENGINE Serving on 127.0.0.1:8080
+[21/Jan/2014:11:21:27] ENGINE Bus STARTED
+[21/Jan/2014:11:26:48] ENGINE Restarting because /Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_/shutthatdown_submit_quote.py changed.
+[21/Jan/2014:11:26:48] ENGINE Stopped thread 'Autoreloader'.
+[21/Jan/2014:11:26:48] ENGINE Bus STOPPING
+[21/Jan/2014:11:26:48] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jan/2014:11:26:48] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Jan/2014:11:26:48] ENGINE Bus STOPPED
+[21/Jan/2014:11:26:48] ENGINE Bus EXITING
+[21/Jan/2014:11:26:48] ENGINE Bus EXITED
+[21/Jan/2014:11:26:48] ENGINE Waiting for child threads to terminate...
+[21/Jan/2014:11:26:48] ENGINE Re-spawning shutthatdown.py
+[21/Jan/2014:11:26:48] ENGINE Listening for SIGHUP.
+[21/Jan/2014:11:26:48] ENGINE Listening for SIGTERM.
+[21/Jan/2014:11:26:48] ENGINE Listening for SIGUSR1.
+[21/Jan/2014:11:26:48] ENGINE Bus STARTING
+[21/Jan/2014:11:26:48] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Jan/2014:11:26:48] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jan/2014:11:26:48] ENGINE Serving on 127.0.0.1:8080
+[21/Jan/2014:11:26:48] ENGINE Bus STARTED
+[21/Jan/2014:11:27:18] ENGINE Restarting because /Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_/shutthatdown_submit_quote.py changed.
+[21/Jan/2014:11:27:18] ENGINE Stopped thread 'Autoreloader'.
+[21/Jan/2014:11:27:18] ENGINE Bus STOPPING
+[21/Jan/2014:11:27:18] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jan/2014:11:27:18] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Jan/2014:11:27:18] ENGINE Bus STOPPED
+[21/Jan/2014:11:27:18] ENGINE Bus EXITING
+[21/Jan/2014:11:27:18] ENGINE Bus EXITED
+[21/Jan/2014:11:27:18] ENGINE Waiting for child threads to terminate...
+[21/Jan/2014:11:27:18] ENGINE Re-spawning shutthatdown.py
+[21/Jan/2014:11:27:18] ENGINE Listening for SIGHUP.
+[21/Jan/2014:11:27:18] ENGINE Listening for SIGTERM.
+[21/Jan/2014:11:27:18] ENGINE Listening for SIGUSR1.
+[21/Jan/2014:11:27:18] ENGINE Bus STARTING
+[21/Jan/2014:11:27:18] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Jan/2014:11:27:18] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jan/2014:11:27:18] ENGINE Serving on 127.0.0.1:8080
+[21/Jan/2014:11:27:18] ENGINE Bus STARTED
+[21/Jan/2014:11:27:22] ENGINE Restarting because /Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_/shutthatdown_submit_quote.py changed.
+[21/Jan/2014:11:27:22] ENGINE Stopped thread 'Autoreloader'.
+[21/Jan/2014:11:27:22] ENGINE Bus STOPPING
+[21/Jan/2014:11:27:22] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jan/2014:11:27:22] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Jan/2014:11:27:22] ENGINE Bus STOPPED
+[21/Jan/2014:11:27:22] ENGINE Bus EXITING
+[21/Jan/2014:11:27:22] ENGINE Bus EXITED
+[21/Jan/2014:11:27:22] ENGINE Waiting for child threads to terminate...
+[21/Jan/2014:11:27:22] ENGINE Re-spawning shutthatdown.py
+[21/Jan/2014:11:27:22] ENGINE Listening for SIGHUP.
+[21/Jan/2014:11:27:22] ENGINE Listening for SIGTERM.
+[21/Jan/2014:11:27:22] ENGINE Listening for SIGUSR1.
+[21/Jan/2014:11:27:22] ENGINE Bus STARTING
+[21/Jan/2014:11:27:22] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Jan/2014:11:27:22] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jan/2014:11:27:22] ENGINE Serving on 127.0.0.1:8080
+[21/Jan/2014:11:27:22] ENGINE Bus STARTED
+[21/Jan/2014:11:27:34] ENGINE Restarting because /Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_/shutthatdown_welove.py changed.
+[21/Jan/2014:11:27:34] ENGINE Stopped thread 'Autoreloader'.
+[21/Jan/2014:11:27:34] ENGINE Bus STOPPING
+[21/Jan/2014:11:27:34] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jan/2014:11:27:34] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Jan/2014:11:27:34] ENGINE Bus STOPPED
+[21/Jan/2014:11:27:34] ENGINE Bus EXITING
+[21/Jan/2014:11:27:34] ENGINE Bus EXITED
+[21/Jan/2014:11:27:34] ENGINE Waiting for child threads to terminate...
+[21/Jan/2014:11:27:34] ENGINE Re-spawning shutthatdown.py
+[21/Jan/2014:11:27:35] ENGINE Listening for SIGHUP.
+[21/Jan/2014:11:27:35] ENGINE Listening for SIGTERM.
+[21/Jan/2014:11:27:35] ENGINE Listening for SIGUSR1.
+[21/Jan/2014:11:27:35] ENGINE Bus STARTING
+[21/Jan/2014:11:27:35] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Jan/2014:11:27:35] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jan/2014:11:27:35] ENGINE Serving on 127.0.0.1:8080
+[21/Jan/2014:11:27:35] ENGINE Bus STARTED
+[21/Jan/2014:11:27:44] ENGINE Keyboard Interrupt: shutting down bus
+[21/Jan/2014:11:27:44] ENGINE Bus STOPPING
+[21/Jan/2014:11:27:44] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jan/2014:11:27:44] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Jan/2014:11:27:44] ENGINE Stopped thread 'Autoreloader'.
+[21/Jan/2014:11:27:44] ENGINE Bus STOPPED
+[21/Jan/2014:11:27:44] ENGINE Bus EXITING
+[21/Jan/2014:11:27:44] ENGINE Bus EXITED
+[21/Jan/2014:11:27:44] ENGINE Waiting for child threads to terminate...
+[21/Jan/2014:11:46:10] ENGINE Listening for SIGHUP.
+[21/Jan/2014:11:46:10] ENGINE Listening for SIGTERM.
+[21/Jan/2014:11:46:10] ENGINE Listening for SIGUSR1.
+[21/Jan/2014:11:46:10] ENGINE Bus STARTING
+[21/Jan/2014:11:46:10] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Jan/2014:11:46:10] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jan/2014:11:46:10] ENGINE Serving on 127.0.0.1:8080
+[21/Jan/2014:11:46:10] ENGINE Bus STARTED
+[21/Jan/2014:11:46:18] ENGINE Keyboard Interrupt: shutting down bus
+[21/Jan/2014:11:46:18] ENGINE Bus STOPPING
+[21/Jan/2014:11:46:18] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jan/2014:11:46:18] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Jan/2014:11:46:18] ENGINE Stopped thread 'Autoreloader'.
+[21/Jan/2014:11:46:18] ENGINE Bus STOPPED
+[21/Jan/2014:11:46:18] ENGINE Bus EXITING
+[21/Jan/2014:11:46:18] ENGINE Bus EXITED
+[21/Jan/2014:11:46:18] ENGINE Waiting for child threads to terminate...
+[21/Jan/2014:11:48:18] ENGINE Listening for SIGHUP.
+[21/Jan/2014:11:48:18] ENGINE Listening for SIGTERM.
+[21/Jan/2014:11:48:18] ENGINE Listening for SIGUSR1.
+[21/Jan/2014:11:48:18] ENGINE Bus STARTING
+[21/Jan/2014:11:48:18] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Jan/2014:11:48:18] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jan/2014:11:48:18] ENGINE Serving on 127.0.0.1:8080
+[21/Jan/2014:11:48:18] ENGINE Bus STARTED
+[21/Jan/2014:11:58:26] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_/shutthatdown_special_thanks.py", line 14, in special_thanks
+    database_connection = psycopg2.connect(shutthatdown_credentials.database_connection_details)
+  File "/Library/Python/2.7/site-packages/psycopg2/__init__.py", line 164, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, async=async)
+OperationalError: could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+
+
+[21/Jan/2014:11:58:26] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:8080/about
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:11:58:33] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_/shutthatdown_stats.py", line 16, in stats
+    database_connection = psycopg2.connect(shutthatdown_credentials.database_connection_details)
+  File "/Library/Python/2.7/site-packages/psycopg2/__init__.py", line 164, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, async=async)
+OperationalError: could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+
+
+[21/Jan/2014:11:58:33] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:8080/welove
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:11:58:38] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_/shutthatdown_inmystate.py", line 45, in inmystate
+    database_connection = psycopg2.connect(shutthatdown_credentials.database_connection_details)
+  File "/Library/Python/2.7/site-packages/psycopg2/__init__.py", line 164, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, async=async)
+OperationalError: could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+
+
+[21/Jan/2014:11:58:38] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:8080/inmystate
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:11:58:41] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_/shutthatdown_enablers.py", line 16, in enablers
+    database_connection = psycopg2.connect(shutthatdown_credentials.database_connection_details)
+  File "/Library/Python/2.7/site-packages/psycopg2/__init__.py", line 164, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, async=async)
+OperationalError: could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+
+
+[21/Jan/2014:11:58:41] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:8080/inmystate
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:11:58:44] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_/shutthatdown_browse_persons.py", line 17, in browse_persons
+    database_connection = psycopg2.connect(shutthatdown_credentials.database_connection_details)
+  File "/Library/Python/2.7/site-packages/psycopg2/__init__.py", line 164, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, async=async)
+OperationalError: could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+
+
+[21/Jan/2014:11:58:44] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:8080/inmystate
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:11:58:47] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_/shutthatdown_browse_quotes.py", line 17, in browse_quotes
+    database_connection = psycopg2.connect(shutthatdown_credentials.database_connection_details)
+  File "/Library/Python/2.7/site-packages/psycopg2/__init__.py", line 164, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, async=async)
+OperationalError: could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+
+
+[21/Jan/2014:11:58:47] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:8080/inmystate
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:11:58:57] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_/shutthatdown_index.py", line 16, in index
+    database_connection = psycopg2.connect(shutthatdown_credentials.database_connection_details)
+  File "/Library/Python/2.7/site-packages/psycopg2/__init__.py", line 164, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, async=async)
+OperationalError: could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+
+
+[21/Jan/2014:11:58:57] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:8080/inmystate
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:11:59:06] ENGINE Keyboard Interrupt: shutting down bus
+[21/Jan/2014:11:59:06] ENGINE Bus STOPPING
+[21/Jan/2014:11:59:07] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jan/2014:11:59:07] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Jan/2014:11:59:07] ENGINE Stopped thread 'Autoreloader'.
+[21/Jan/2014:11:59:07] ENGINE Bus STOPPED
+[21/Jan/2014:11:59:07] ENGINE Bus EXITING
+[21/Jan/2014:11:59:07] ENGINE Bus EXITED
+[21/Jan/2014:11:59:07] ENGINE Waiting for child threads to terminate...
+[21/Jan/2014:12:20:37] ENGINE Listening for SIGHUP.
+[21/Jan/2014:12:20:37] ENGINE Listening for SIGTERM.
+[21/Jan/2014:12:20:37] ENGINE Listening for SIGUSR1.
+[21/Jan/2014:12:20:37] ENGINE Bus STARTING
+[21/Jan/2014:12:20:37] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Jan/2014:12:20:37] ENGINE Started monitor thread 'Autoreloader'.
+[21/Jan/2014:12:20:37] ENGINE Serving on 127.0.0.1:8080
+[21/Jan/2014:12:20:37] ENGINE Bus STARTED
+[21/Jan/2014:12:23:09] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/shannon/Dropbox/GitHub/shut-that-down/shutthatdown_/shutthatdown_index.py", line 16, in index
+    database_connection = psycopg2.connect(shutthatdown_credentials.database_connection_details)
+  File "/Library/Python/2.7/site-packages/psycopg2/__init__.py", line 164, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, async=async)
+OperationalError: FATAL:  role "user" does not exist
+
+
+[21/Jan/2014:12:23:09] HTTP 
+Request Headers:
+  HOST: 127.0.0.1:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip,deflate,sdch
+[21/Jan/2014:12:26:56] ENGINE Keyboard Interrupt: shutting down bus
+[21/Jan/2014:12:26:56] ENGINE Bus STOPPING
+[21/Jan/2014:12:26:56] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[21/Jan/2014:12:26:56] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Jan/2014:12:26:56] ENGINE Stopped thread 'Autoreloader'.
+[21/Jan/2014:12:26:56] ENGINE Bus STOPPED
+[21/Jan/2014:12:26:56] ENGINE Bus EXITING
+[21/Jan/2014:12:26:56] ENGINE Bus EXITED
+[21/Jan/2014:12:26:56] ENGINE Waiting for child threads to terminate...
