@@ -449,6 +449,8 @@ def quote(self, **kwargs):
 
     # Get Voter Turnout Information
 
+        voter_turnout_query = None
+
         if cycle is not None:
 
             if len(sunlight_politician_summary) > 0:

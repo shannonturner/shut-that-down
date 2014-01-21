@@ -8,6 +8,8 @@ def random_quote(self, **kwargs):
     import psycopg2
     import shutthatdown_.shutthatdown_credentials as shutthatdown_credentials
 
+    import random
+
     database_connection = psycopg2.connect(shutthatdown_credentials.database_connection_details)
     database_cursor = database_connection.cursor()
     database_cursor.execute("select id from quotes where quote_text != ''")
