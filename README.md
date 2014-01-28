@@ -3,7 +3,7 @@ shut-that-down
 
 Shut That Down is a collection of misogynist, racist, xenophobic, homophobic, and transphobic quotes by public figures and the corporations who fund that hate speech.
 
-This repo is what powers shutthatdown.com
+This repo is what powers http://shutthatdown.com
 
 --------------
  Data Sources
