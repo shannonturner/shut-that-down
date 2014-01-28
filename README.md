@@ -1,9 +1,9 @@
 shut-that-down
 ==============
 
-Shut That Down is a collection of offensive quotes by public figures and the corporations who keep those public figures with a platform for their hate speech.
+Shut That Down is a collection of misogynist, racist, xenophobic, homophobic, and transphobic quotes by public figures and the corporations who fund that hate speech.
 
-This repo is what powers www.shutthatdown.com
+This repo is what powers shutthatdown.com
 
 --------------
  Data Sources
