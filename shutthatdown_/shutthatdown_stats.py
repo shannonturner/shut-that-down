@@ -39,7 +39,8 @@ def stats(self, **kwargs):
     database_cursor.execute("select party, count(*), (select count(*) from quotes inner join persons on persons.id = quotes.who_said where quote_text != '' and party != '' and persons.type in (1,3) order by count(*) desc) from quotes inner join persons on persons.id = quotes.who_said where quote_text != '' and party != '' and persons.type in (1,3) group by party order by count(*) desc")
     for quotecount_by_party in database_cursor.fetchall():
         (party, count, total) = quotecount_by_party
-        quotes_by_party.append('<tr><td><h3><b>{0} ({1:0.4}%)</b></h3> of quotes are by {2} party members</td></tr>'.format(count, (float(count) / float(total))*100, party.replace("R", "Republican").replace("D", "Democratic").replace("I", "Independent")))
+        if float(count) / float(total) != 1.0:
+            quotes_by_party.append('<tr><td><h3><b>{0} ({1:0.4}%)</b></h3> of quotes are by {2} party members</td></tr>'.format(count, (float(count) / float(total))*100, party.replace("R", "Republican").replace("D", "Democratic").replace("I", "Independent")))
         
     # Number of Quotes by Quote Type
     quotes_by_type = []
