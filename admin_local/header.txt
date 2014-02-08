@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>!!!DYNAMIC_TITLE!!! - Shut That Down</title>
+
+
+  <link rel="stylesheet" href="./css/foundation.css" />
+  <link rel="icon" type="image/png" href="./favicon.png">
+
+
+  <script src="../js/vendor/custom.modernizr.js"></script>
+
+</head>
+
+<body>
+
+<nav class="top-bar">
+  <ul class="title-area">
+
+    <li class="name">
+      <h1><a href="/">Shut That Down</a></h1>
+    </li>
+
+  </ul>
+
+  <section class="top-bar-section" >
+
+    <ul class="left">
+
+      <li class="divider"></li>
+      <!-- <li><a href="new_quote">New Quote</a></li> -->
+      <!-- <li><a href="new_person">New Person</a></li> -->
+      <li><a href="tag_quote">Tag Quote</a></li>
+
+    </ul>
+  </section>
+</nav>
+
+<br>
