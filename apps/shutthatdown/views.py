@@ -56,7 +56,7 @@ def parse_contributions(response):
 
 class HomeView(TemplateView):
 
-    template_name = 'index.html'
+    template_name = 'relaunch.html'
 
     def get(self, request, **kwargs):
         return render(request, self.template_name, {})
