@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Shut That Down</title>
+
+    <!-- Meta & Opengraph tags -->
+
+    <meta name="description" content="Who's funding hate in your state? Exposing which corporations give money to misogynist, racist, xenophobic, homophobic, and transphobic politicians.">
+
+    <meta property="og:title" content="Shut That Down">
+    <meta property="og:site_name" content="Shut That Down">
+    <meta property="og:url" content="http://shutthatdown.com">
+    <meta property="og:description" content="Who's funding hate in your state? Find out who gives money to misogynist, racist, xenophobic, homophobic, and transphobic politicians.">
+    <meta property="og:image" content="http://shannonvturner.com/images/shutthatdown.png">
+
+    {% include "header.html" %}
+
+  </head>
+<body>
+
+{% include "nav.html" %}
+
+<div id="main_ribbon" style="overflow: hidden; height: 1%;">
+
+    <div class="text-center">
+        <h1 style="font-family: 'Courgette', cursive; font-size: 48px;">Is your politician a ...</h1>
+    </div>
+
+    <div class="row">
+
+        <div class="col-lg-1"> </div>
+
+        <div class="col-lg-3">
+            <a href="/browse/misogynist" class="no-underline"><span class="misogynist"><h2>misogynist?</h2></span></a>
+            <a href="/browse/racist" class="no-underline"><span class="racist"><h2>racist?</h2></span></a>
+            <a href="/browse/xenophobic" class="no-underline"><span class="xenophobic"><h2>xenophobe?</h2></span></a>
+            <a href="/browse/anti-lgbtq" class="no-underline"><span class="homophobic"><h2>homophobe?</h2></span></a>
+            <a href="/browse/anti-lgbtq" class="no-underline"><span class="transphobic"><h2>transphobe?</h2></span></a>
+        </div>
+
+        <div class="col-lg-7">
+            <h1 id="wehaveways">We have ways to <a href="/quote/1">shut that whole thing down</a></h1>
+        </div>
+
+        <div class="col-lg-1"> </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-lg-10 col-lg-offset-1 text-center">
+            <span class="misogynist"><h2>We'll show you the companies funding hate speech</h2></span>
+        </div>
+
+        <div class="col-lg-6 col-lg-offset-3 text-center">
+            <br>
+            <div class="media">
+              <a class="pull-left" href="/quote/1">
+                <img class="media-object img-responsive" src="http://shannonvturner.com/images/A000358.jpg" alt="Todd Akin" title="Todd Akin" width="100" height="125">
+              </a>
+              <div class="media-body">
+                <h3 class="media-heading">"If it's a legitimate rape, the female body has ways to shut that whole thing down."</h3>
+                <br>
+                <h4>Boeing gave <button class="btn-success">$5,000</button> to Todd Akin</h4>
+              </div>
+            </div>
+
+        </div>
+
+        <div class="col-lg-10 col-lg-offset-1 text-center">
+            <span class="racist"><h2 style="font-size: 29px;">You can shut that whole thing down by asking companies:</h2></span>
+        </div>
+
+        <div class="col-lg-8 col-lg-offset-2">
+            <hr id="or">
+        </div>
+
+        <div class="col-lg-10 col-lg-offset-1 text-center">
+            <span class="xenophobic"><h2>Did you know they *SAID* that?</h2></span>
+        </div>
+
+        <div class="col-lg-10 col-lg-offset-1 text-center">
+            <span class="homophobic"><h2>Are you comfortable with that?</h2></span>
+        </div>
+
+        <div class="col-lg-10 col-lg-offset-1 text-center">
+            <span class="transphobic"><h2>Do you want your brand associated with that?</h2></span>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-lg-2"> </div>
+        <div class="col-lg-3"><hr id="or"></div>
+        <div class="col-lg-2 text-center"><h1 style="margin-top: .1em; font-family: 'Courgette', cursive;">or</h1></div>
+        <div class="col-lg-3"><hr id="or"></div>
+        <div class="col-lg-2"> </div>
+    </div>
+
+    <div class="col-lg-10 col-lg-offset-1 text-center">
+        <span class="wehaveways"><h2 style="color: #000;">Are you going to get your money back?</h2></span>
+    </div>
+
+    <div class="col-lg-8 col-lg-offset-2">
+        <hr id="or">
+    </div>
+
+    <div class="row" id="map">
+
+        <div class="col-lg-10 col-lg-offset-1 text-center">
+
+            <span>
+            <h2 style="color: #fff; background-color: #444;">Click to see who's funding hate in your state:</h2>
+            </span>
+            <div id="vmap" class="img-responsive text-center" style="width: 900px; height: 600px; margin: 0 auto;"></div>
+        
+        </div>
+
+    </div>
+
+    <!-- Home Navigation only -->
+
+    <div class="row">
+
+        <div class="col-lg-10 col-lg-offset-1 text-center">
+            <span class="wehaveways"><h2 style="color: #000;">Browse quotes by type:</h2></span>
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-lg-3 text-center">
+            <a href="/browse/misogynist" class="no-underline"><span class="misogynist"><h2>Misogynist</h2></span></a>
+        </div>
+        <div class="col-lg-3 text-center">
+            <a href="/browse/racist" class="no-underline"><span class="racist"><h2>Racist</h2></span></a>
+        </div>
+        <div class="col-lg-3 text-center">
+            <a href="/browse/xenophobic" class="no-underline"><span class="xenophobic"><h2>Xenophobic</h2></span></a>
+        </div>
+        <div class="col-lg-3 text-center">
+            <a href="/browse/anti-lgbtq" class="no-underline"><span><h2 class="gradient-lgbtq">Anti-LGBTQ</h2></span></a>
+        </div>
+
+    </div>
+    
+</div>
+
+    {% include "footer.html" %}
+
+    {% include "map.html" %}
+
+  </body>
+</html>

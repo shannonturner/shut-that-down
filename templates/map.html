@@ -1,0 +1,35 @@
+<!-- JQVMap: https://github.com/manifestinteractive/jqvmap -->
+    <script src="http://shannonvturner.com/jqvmap/jqvmap/jquery.vmap.js" type="text/javascript"></script>
+    <script src="http://shannonvturner.com/jqvmap/jqvmap/maps/jquery.vmap.usa.js" type="text/javascript"></script>
+
+    <script>
+
+        jQuery(document).ready(function() {
+            jQuery('#vmap').vectorMap({ 
+                map: 'usa_en',
+                backgroundColor: null,
+                color: '#ffffff',
+                borderColor: '#000',
+                borderWidth: 1.5,
+                borderOpacity: 1,
+                hoverOpacity: .7,
+                selectedColor: '#666666',
+                enableZoom: false,
+                showTooltip: false,
+                onRegionClick: function(element, code, region)
+                {
+                    window.location.href = "/state/" + code;
+                }
+            });
+
+            // Randomly assign colors to states
+            colors = ['#F78B24', '#F0C22F', '#A6C43C', '#367C3D', '#6DD0F4', '#EBBFFF', '#F78B24', '#F0C22F', '#A6C43C', '#367C3D']
+
+            $('path').each(function(index, value) {
+                $(this).attr('fill', colors[ Math.floor(Math.random() * 10)] );
+                $(this)
+            });
+
+        });
+
+    </script>

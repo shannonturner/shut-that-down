@@ -1,4 +1,6 @@
-*.csv
 *.pyc
-
-*.log
+bin/
+lib/
+include/
+.Python
+static/jqvmap/

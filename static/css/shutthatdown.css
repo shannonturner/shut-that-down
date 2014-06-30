@@ -1,0 +1,151 @@
+body { 
+    padding-top: 70px; 
+}
+
+.navbar-shutthatdown a {
+    color: #fff !important;
+}
+
+.navbar-shutthatdown a:hover {
+    background-color: #ff0;
+}
+
+span.misogynist > h2 {
+    background-color: #F78B24;   
+}
+
+span.racist > h2 {
+    background-color: #F0C22F;
+}
+
+span.xenophobic > h2 {
+    background-color: #A6C43C;
+}
+
+span.homophobic > h2 {
+    background-color: #367C3D;
+}
+
+span.transphobic > h2 {
+    background-color: #6DD0F4;
+}
+
+span.wehaveways > h2 {
+    background-color: #EBBFFF;
+}
+
+a.no-underline:hover {
+    text-decoration: none;
+}
+
+.gradient-lgbtq {
+    background: -webkit-linear-gradient(left, #367C3D, #6DD0F4); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #367C3D, #6DD0F4); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #367C3D, #6DD0F4); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #367C3D, #6DD0F4); /* Standard syntax */
+}
+
+span > h2 {
+    font-family: 'Quando', serif;
+    color: #fff;
+    padding: .6em;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#wehaveways {
+    font-family: 'Courgette', cursive;
+    font-size: 96px;
+    background-color: #EBBFFF;
+    padding: .45em;
+    padding-bottom: .7em;
+}
+
+#or {
+    border-color: #888;
+    border-style: solid;
+    border-width: 2px;
+}
+
+#footer-ribbon {
+    min-height: 175px;
+    max-height: 10%;
+    background-color: #000;
+    color: #fff;
+}
+
+#footer-ribbon h4 {
+    font-size: 14px;
+    margin-bottom: 2em;
+}
+
+#quote {
+    width: 100%;
+}
+
+#person-info {
+    font-size: 18px; 
+    width: 80%;
+    color: #000;
+}
+
+#top-donors {
+    color: #fff;
+    background-color: #444;
+    margin-bottom: 0;
+}
+
+.donation {
+    background-color: #eee;
+    font-size: 20px;
+    color: #000;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.donation2 {
+    background-color: #ddd;
+    font-size: 20px;
+    color: #000;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#donation-credits {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fef;
+    padding: .6em;
+    margin-top: 0;
+}
+
+.contact-icons {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);    
+}
+
+@media only screen and (min-width: 48em) {
+    #submit-quote {
+        width: 760px;
+    }
+}
+
+@media only screen and (max-width: 47.938em) {
+    #submit-quote {
+        width: 460px;
+    }
+}
+
+@media only screen and (max-width: 29.938em) {
+    #submit-quote {
+        width: 320px;
+    }
+}
+
+@media only screen and (max-width: 39.938em) {
+    .sm-nopull {
+        float: none !important;
+    }
+}
