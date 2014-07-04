@@ -33,7 +33,7 @@ def parse_contributions(response):
             if amount > 0 and contribution.get('name'):
                 contributions.append({
                         'name': contribution.get('name'),
-                        'amount': amount,
+                        'amount': '{:,}'.format(amount),
                     })
 
                 # Look up Contributor; add if new

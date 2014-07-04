@@ -38,6 +38,13 @@ a.no-underline:hover {
     text-decoration: none;
 }
 
+span.anti-lgbtq > h2 {
+    background: -webkit-linear-gradient(left, #367C3D, #6DD0F4); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #367C3D, #6DD0F4); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #367C3D, #6DD0F4); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #367C3D, #6DD0F4); /* Standard syntax */
+}
+
 .gradient-lgbtq {
     background: -webkit-linear-gradient(left, #367C3D, #6DD0F4); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(right, #367C3D, #6DD0F4); /* For Opera 11.1 to 12.0 */
