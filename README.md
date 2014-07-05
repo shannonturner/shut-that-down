@@ -1,4 +1,4 @@
-## Shut That Down: shutthatdown.com
+## Shut That Down: [shutthatdown.com](http://shutthatdown.com)
 
 Shut That Down is a collection of misogynist, racist, xenophobic, homophobic, and transphobic quotes by politicians -- and who gives them money.
 
