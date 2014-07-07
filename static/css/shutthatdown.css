@@ -139,9 +139,18 @@ span > h2 {
     }
 }
 
+@media only screen and (max-width: 48em) {
+    body {
+        padding-top: 100px;
+    }
+}
+
 @media only screen and (max-width: 47.938em) {
     #submit-quote {
         width: 460px;
+    }
+    body {
+        padding-top: 70px;
     }
 }
 
