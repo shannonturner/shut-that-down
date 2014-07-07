@@ -94,7 +94,7 @@
 
                 <span>
                     <h2 class="{% cycle 'donation' 'donation2' %}">
-                        {{ contribution.name|title }} gave <button class="btn-success">${{ contribution.amount }}</button>
+                        {{ contribution.name|title }}
 
                     {% if contribution.facebook %}
                         <a class="btn btn-primary" href="{{ contribution.facebook }}" target="_blank"><img class="glyphicons facebook contact-icons" title="{{ contribution.name|title }} Facebook" alt="{{ contribution.name|title }} Facebook" src="http://shannonvturner.com/glyphicons_free/glyphicons_social/png/glyphicons_social_30_facebook.png"></a>
@@ -109,6 +109,8 @@
                     {% if contribution.email %}
                         <a class="btn btn-danger" href="mailto:{{ contribution.email }}"><img class="glyphicons facebook contact-icons" title="{{ contribution.name|title }} Email" alt="{{ contribution.name|title }} Email" src="http://shannonvturner.com/glyphicons_free/glyphicons_social/png/glyphicons_social_39_e-mail.png"></a>
                     {% endif %}
+
+                    gave <button class="btn-success">${{ contribution.amount }}</button>
 
                     </h2>
                 </span>
