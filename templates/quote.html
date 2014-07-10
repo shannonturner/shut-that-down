@@ -148,7 +148,7 @@
         {% for other_quote in other_quotes %}
             <div class="col-lg-4">
                 <a class="no-underline" href="/quote/{{ other_quote.id }}">
-                <span class="{{ other_quote.types.all.0|lower }}"><h2 class="{{ other_quote.types.all.0|lower }}">"{{ other_quote.quote|truncatechars:30 }}"</h2></span>
+                <span class="{{ other_quote.types.all.0|lower }}"><h2 class="{{ other_quote.types.all.0|lower }}">"{{ other_quote.quote|truncatechars:60 }}"</h2></span>
                 </a>
             </div>
         {% endfor %}
