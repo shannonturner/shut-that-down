@@ -92,6 +92,8 @@
 
             {% for contribution in contributions %}
 
+                {% if not contribution.errata %}
+
                 <span>
                     <h2 class="{% cycle 'donation' 'donation2' %}">
                         {{ contribution.name|title }}
@@ -114,6 +116,8 @@
 
                     </h2>
                 </span>
+
+                {% endif %}
 
             {% endfor %}
 

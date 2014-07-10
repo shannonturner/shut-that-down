@@ -51,5 +51,8 @@ class Contributor(models.Model):
     twitter = models.CharField(max_length=255, null=True, blank=True)
     email = models.CharField(max_length=255, null=True, blank=True)
 
+    # See Issue #24: https://github.com/shannonturner/shut-that-down/issues/24
+    errata = models.BooleanField(default=False)
+
     def __unicode__(self):
         return self.name

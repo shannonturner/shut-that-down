@@ -43,6 +43,8 @@ def parse_contributions(response):
                     new_contributor = Contributor(name=contribution.get('name'))
                     new_contributor.save()
                 else:
+                    if contributor.errata:
+                        contributions[-1]['errata'] = contributor.errata
                     if contributor.facebook:
                         contributions[-1]['facebook'] = contributor.facebook
                     if contributor.twitter:
