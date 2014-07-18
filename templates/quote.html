@@ -67,17 +67,17 @@
                 <span class="wehaveways">
                     <h2 id="person-info">{{ person.party }} | {{ person.state }} | {{ person.title }}  
 
-                        <br>
+                        <br> <br>
 
                         Can you believe
-                        {% if person.gender = "M" %} 
+                        {% if person.gender = "M" %}
                             he
                         {% elif person.gender = "F" %}
                             she
                         {% else %}
                             they
                         {% endif %}
-                        said that? Tell your friends: 
+                        said that? Tell your friends:
                             <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://shutthatdown.com/quote/{{ quote.id }}" data-text="http://shutthatdown.com/static/images/quotes/{{ quote.id }}.png" data-via="svt827" data-size="large" data-hashtags="shutthatdown">Tweet</a>
                         {% if person.facebook %}
                             <!-- FACEBOOK LINK HERE -->
