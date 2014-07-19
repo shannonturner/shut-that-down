@@ -75,7 +75,8 @@ class QuoteView(TemplateView):
             quote = int(quote)
             quote = Quote.objects.get(id=quote)
         except:
-            quote = random.choice(Quote.objects.all())
+            quote = random.randint(1, Quote.objects.count())
+            return HttpResponseRedirect('/quote/{0}'.format(quote))
 
         context = self.get_context_data(**{
             'who': quote.who.id,
