@@ -20,6 +20,9 @@
     <meta property="og:image" content="http://shutthatdown.com/static/images/quotes/{{ quote.id }}.png">
 
     {% include "header.html" %}
+    <meta name="twitter:title" content="{{ quote.types.all.0 }} quote by {{ person.display_name }}">
+    <meta name="twitter:description" content="{{ person.display_name }} said: {{ quote.quote|truncatechars:75 }}">
+    <meta name="twitter:image:src" content="http://shutthatdown.com/static/images/quotes/{{ quote.id }}.png">
 
     <!-- Font Awesome for the Shut That Down logo -->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
