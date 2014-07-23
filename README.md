@@ -11,7 +11,7 @@ Shut That Down is a collection of misogynist, racist, xenophobic, homophobic, an
 
 #### We have ways to shut that whole thing down.
 
-#### We'll show you the companies funding hate speech (and how to contact them!)
+#### We'll show you the companies funding hate (and how to contact them!)
 
 #### You can shut that whole thing down by asking companies:
 * Did you know they **said** that?
