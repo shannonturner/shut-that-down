@@ -139,6 +139,11 @@
             <span>
                 <h4 id="donation-credits">Donation information provided by the <br> <a href="http://sunlightfoundation.com/" target="_blank">Sunlight Foundation</a>, <a href="http://opensecrets.org/" target="_blank">OpenSecrets.org</a>, and <a href="http://followthemoney.org" target="_blank">FollowTheMoney.org</a></h2>
             </span>
+            <span>
+                {% if contributions|length < 4 %}
+                    <h4 id="realtime-disclosure">There aren't many donations here, but <a href="http://sunlightfoundation.com/blog/2013/12/11/real-time-disclosure-one-simple-fix-for-a-more-informed-public/" target="_blank">requiring realtime disclosure of contributions</a> would fix that problem.</h4>
+                {% endif %}
+            </span>
 
         </div>
 
