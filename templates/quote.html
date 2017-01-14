@@ -15,14 +15,14 @@
 
     <meta property="og:title" content="Quotes - Shut That Down">
     <meta property="og:site_name" content="Shut That Down">
-    <meta property="og:url" content="http://shutthatdown.com/quote/{{ quote.id }}">
+    <meta property="og:url" content="https://shutthatdown.com/quote/{{ quote.id }}">
     <meta property="og:description" content="Who's funding hate in your state? Find out who gives money to misogynist, racist, xenophobic, homophobic, and transphobic politicians.">
-    <meta property="og:image" content="http://shutthatdown.com/static/images/quotes/{{ quote.id }}.png">
+    <meta property="og:image" content="https://shutthatdown.com/static/images/quotes/{{ quote.id }}.png">
 
     {% include "header.html" %}
     <meta name="twitter:title" content="{{ quote.types.all.0 }} quote by {{ person.display_name }}">
     <meta name="twitter:description" content="{{ person.display_name }} said: {{ quote.quote|truncatechars:75 }}">
-    <meta name="twitter:image:src" content="http://shutthatdown.com/static/images/quotes/{{ quote.id }}.png">
+    <meta name="twitter:image:src" content="https://shutthatdown.com/static/images/quotes/{{ quote.id }}.png">
 
     <!-- Font Awesome for the Shut That Down logo -->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
@@ -81,7 +81,7 @@
                             they
                         {% endif %}
                         said that? Tell your friends:
-                            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://shutthatdown.com/quote/{{ quote.id }}" data-text="http://shutthatdown.com/static/images/quotes/{{ quote.id }}.png" data-via="svthmc" data-size="large" data-hashtags="shutthatdown">Tweet</a>
+                            <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://shutthatdown.com/quote/{{ quote.id }}" data-text="https://shutthatdown.com/static/images/quotes/{{ quote.id }}.png" data-via="svthmc" data-size="large" data-hashtags="shutthatdown">Tweet</a>
                         {% if person.facebook %}
                             <!-- FACEBOOK LINK HERE -->
                         {% endif %}
@@ -114,17 +114,17 @@
                         {{ contribution.name|title }}
 
                     {% if contribution.facebook %}
-                        <a class="btn btn-primary" href="{{ contribution.facebook }}" target="_blank"><img class="glyphicons facebook contact-icons" title="{{ contribution.name|title }} Facebook" alt="{{ contribution.name|title }} Facebook" src="http://shannonvturner.com/glyphicons_free/glyphicons_social/png/glyphicons_social_30_facebook.png"></a>
+                        <a class="btn btn-primary" href="{{ contribution.facebook }}" target="_blank"><img class="glyphicons facebook contact-icons" title="{{ contribution.name|title }} Facebook" alt="{{ contribution.name|title }} Facebook" src="https://shannonvturner.com/glyphicons_free/glyphicons_social/png/glyphicons_social_30_facebook.png"></a>
                     {% endif %}
 
                     {% if contribution.twitter %}
                         <span style="position: relative; top: 5px;">
-                            <a href="https://twitter.com/share" class="twitter-share-button" data-text=".@{{ contribution.twitter }}: do you want your brand associated with this? http://shutthatdown.com/static/images/quotes/{{ quote.id }}.png" data-size="large" data-count="none" data-hashtags="shutthatdown" alt="@{{ contribution.twitter }}" title="@{{contribution.twitter}}">Tweet</a>
+                            <a href="https://twitter.com/share" class="twitter-share-button" data-text=".@{{ contribution.twitter }}: do you want your brand associated with this? https://shutthatdown.com/static/images/quotes/{{ quote.id }}.png" data-size="large" data-count="none" data-hashtags="shutthatdown" alt="@{{ contribution.twitter }}" title="@{{contribution.twitter}}">Tweet</a>
                         </span>
                     {% endif %}
 
                     {% if contribution.email %}
-                        <a class="btn btn-danger" href="mailto:{{ contribution.email }}"><img class="glyphicons facebook contact-icons" title="{{ contribution.name|title }} Email" alt="{{ contribution.name|title }} Email" src="http://shannonvturner.com/glyphicons_free/glyphicons_social/png/glyphicons_social_39_e-mail.png"></a>
+                        <a class="btn btn-danger" href="mailto:{{ contribution.email }}"><img class="glyphicons facebook contact-icons" title="{{ contribution.name|title }} Email" alt="{{ contribution.name|title }} Email" src="https://shannonvturner.com/glyphicons_free/glyphicons_social/png/glyphicons_social_39_e-mail.png"></a>
                     {% endif %}
 
                     gave <button class="btn-success">${{ contribution.amount }}</button>
@@ -137,11 +137,11 @@
             {% endfor %}
 
             <span>
-                <h4 id="donation-credits">Donation information provided by the <br> <a href="http://sunlightfoundation.com/" target="_blank">Sunlight Foundation</a>, <a href="http://opensecrets.org/" target="_blank">OpenSecrets.org</a>, and <a href="http://followthemoney.org" target="_blank">FollowTheMoney.org</a></h2>
+                <h4 id="donation-credits">Donation information provided by the <br> <a href="https://sunlightfoundation.com/" target="_blank">Sunlight Foundation</a>, <a href="https://opensecrets.org/" target="_blank">OpenSecrets.org</a>, and <a href="https://followthemoney.org" target="_blank">FollowTheMoney.org</a></h2>
             </span>
             <span>
                 {% if contributions|length < 4 %}
-                    <h4 id="realtime-disclosure">There aren't many donations here, but <a href="http://sunlightfoundation.com/blog/2013/12/11/real-time-disclosure-one-simple-fix-for-a-more-informed-public/" target="_blank">requiring realtime disclosure of contributions</a> would fix that problem.</h4>
+                    <h4 id="realtime-disclosure">There aren't many donations here, but <a href="https://sunlightfoundation.com/blog/2013/12/11/real-time-disclosure-one-simple-fix-for-a-more-informed-public/" target="_blank">requiring realtime disclosure of contributions</a> would fix that problem.</h4>
                 {% endif %}
             </span>
 
