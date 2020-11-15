@@ -121,8 +121,7 @@ class QuoteView(TemplateView):
         # context['contributions'] = contributions
         context['contributions'] = []
         context['person'] = person
-        other_quotes = Quote.objects.exclude(id=quote.id)
-        context['other_quotes'] = random.sample(other_quotes, 3)
+        context['other_quotes'] = Quote.objects.exclude(id=quote.id).order_by('?')[:3]
 
         return context
 
