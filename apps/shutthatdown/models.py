@@ -21,14 +21,14 @@ class Person(models.Model):
 
     sunlight = models.CharField(max_length=100, null=True, blank=True)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.display_name
 
 class QuoteType(models.Model):
 
     quote_type = models.CharField(max_length=100)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.quote_type
 
 class Quote(models.Model):
@@ -38,7 +38,7 @@ class Quote(models.Model):
     source_url = models.CharField(max_length=255)
     types = models.ManyToManyField(QuoteType, related_name='types')
 
-    def __unicode__(self):
+    def __str__(self):
         return self.quote[:10]
 
 class Contributor(models.Model):
@@ -54,5 +54,5 @@ class Contributor(models.Model):
     # See Issue #24: https://github.com/shannonturner/shut-that-down/issues/24
     errata = models.BooleanField(default=False)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.name
