@@ -103,22 +103,23 @@ class QuoteView(TemplateView):
             person = Person.objects.get(id=who)
         except ObjectDoesNotExist:
             context['error'] = 'Error: Could not look up person who said this quote. This should never happen.'
-        else:
-            from credentials import SUNLIGHT_APIKEY
+        # else:
+            # from .credentials import SUNLIGHT_APIKEY
 
-            if person.sunlight:
-                sunlight_ie_url = 'http://transparencydata.com/api/1.0/aggregates/pol/{0}/contributors.json?cycle={1}&apikey={2}'.format(person.sunlight, cycle, SUNLIGHT_APIKEY)
-                contributions = get_contributions(sunlight_ie_url)
+            # if person.sunlight:
+            #     sunlight_ie_url = 'http://transparencydata.com/api/1.0/aggregates/pol/{0}/contributors.json?cycle={1}&apikey={2}'.format(person.sunlight, cycle, SUNLIGHT_APIKEY)
+            #     contributions = get_contributions(sunlight_ie_url)
 
-                if 'Error' in contributions:
-                    context['error'] = contributions
-                    contributions = ''
-                else:
-                    if len(contributions) == 0:
-                        sunlight_ie_url = 'http://transparencydata.com/api/1.0/aggregates/pol/{0}/contributors.json?&apikey={1}'.format(person.sunlight, SUNLIGHT_APIKEY)
-                        contributions = get_contributions(sunlight_ie_url)
+            #     if 'Error' in contributions:
+            #         context['error'] = contributions
+            #         contributions = ''
+            #     else:
+            #         if len(contributions) == 0:
+            #             sunlight_ie_url = 'http://transparencydata.com/api/1.0/aggregates/pol/{0}/contributors.json?&apikey={1}'.format(person.sunlight, SUNLIGHT_APIKEY)
+            #             contributions = get_contributions(sunlight_ie_url)
 
-        context['contributions'] = contributions
+        # context['contributions'] = contributions
+        context['contributions'] = []
         context['person'] = person
         other_quotes = Quote.objects.exclude(id=quote.id)
         context['other_quotes'] = random.sample(other_quotes, 3)
