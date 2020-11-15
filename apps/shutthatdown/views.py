@@ -76,7 +76,6 @@ class QuoteView(TemplateView):
             quote = Quote.objects.get(id=quote)
         except:
             quote = Quote.objects.order_by('?').first()
-            return HttpResponseRedirect('/quote/{0}'.format(quote.id))
 
         context = self.get_context_data(**{
             'who': quote.who.id,
