@@ -7,6 +7,7 @@ from django.core.exceptions import ObjectDoesNotExist
 from apps.shutthatdown.models import Quote, QuoteType, Person, Contributor
 from localflavor.us.us_states import US_STATES
 
+import random
 import requests
 import time
 
@@ -74,7 +75,8 @@ class QuoteView(TemplateView):
             quote = int(quote)
             quote = Quote.objects.get(id=quote)
         except:
-            quote = Quote.objects.order_by('?')[0]
+            quote = random.randint(1, Quote.objects.count())
+            return HttpResponseRedirect('/quote/{0}'.format(quote))
 
         context = self.get_context_data(**{
             'who': quote.who.id,
