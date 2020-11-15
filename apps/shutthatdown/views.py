@@ -74,7 +74,7 @@ class QuoteView(TemplateView):
             quote = int(quote)
             quote = Quote.objects.get(id=quote)
         except:
-            quote = Quote.objects.order_by('?')[:1]
+            quote = Quote.objects.order_by('?')[0]
 
         context = self.get_context_data(**{
             'who': quote.who.id,
